@@ -1,15 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FaFacebook, FaWhatsapp } from "react-icons/fa6";
-import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
     return (
         <>
-            <footer className="bg-[#ffffff] text-[#000000]">
-                <div className="flex flex-col">
-                    <div className="flex  justify-around">
+            <footer className="bg-[#ffffff] text-[#000000] flex flex-col ">
+                    <div className="flex flex-col lg:flex-row justify-around ml-12">
                         <div className="flex">
                             <Image
                                 src="/cww.svg"
@@ -19,8 +17,8 @@ const Footer = () => {
                             />
                         </div>
 
-                        <div className="flex gap-50 pr-15">
-                            <ul className="grid-cols-3 grid-flow-row auto-rows-auto my-3.5">
+                        <div className="flex flex-col lg:flex-row gap-2 pr-15">
+                            <ul className="grid-cols-3 grid-flow-row  my-3.5">
                                 <h1 className="text-xl font-bold">Recources</h1>
                                 <Link href="/Home">
                                     <li className="hover:underline">Home</li>
@@ -66,7 +64,6 @@ const Footer = () => {
                             <p>Copyright © 2024 Careers Worldwide. All rights reserved</p>
                         </div>
                     </div>
-                </div>
             </footer>
         </>
     );
