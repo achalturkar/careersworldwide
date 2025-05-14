@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <header className="font-poppins fixed top-0  w-full z-50 font-poppins bg-gradient-to-r from-blue-900 to-orange-500">
       {/* Top contact bar */}
-      <div className="text-white flex justify-end gap-6 px-4 py-1 text-xs md:text-sm">
+      <div className="text-white flex justify-end gap-3 px-2  py-1 md:gap-6 px-4 text-xs md:text-sm">
         <div className="flex items-center gap-2">
           <IoCall className="size-4" />
           <p>9850041780</p>

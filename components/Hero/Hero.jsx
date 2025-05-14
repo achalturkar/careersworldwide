@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="pt-32 bg-white h-screen w-full flex flex-col px-4 py-8 md:flex-row md:items-center md:px-8 lg:px-16">
+    <div className="pt-28 bg-white h-screen w-full flex flex-col px-4 py-8 md:flex-row md:items-center md:px-8 lg:px-16">
       {/* Hero Description */}
-      <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start gap-6 text-center md:text-left">
-        <h1 className="font-black text-4xl md:text-5xl  leading-tight">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-3 md:items-start  md:gap-6 text-center md:text-left">
+        <h1 className="font-black text-2xl md:text-4xl lg:text-5xl   leading-tight">
           Unlocking Your Business's Potential Through Talent Acquisition
         </h1>
         <p className="font-medium text-lg text-gray-700">
@@ -23,7 +23,7 @@ const Hero = () => {
           width={400}
           height={400}
           alt="hero image"
-          className="mx-auto"
+          className="mx-auto object-cover"
         />
       </div>
     </div>
