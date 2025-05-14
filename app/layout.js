@@ -7,20 +7,20 @@ import Footer from "@/components/Footer/Footer";
 
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], 
-  variable: '--font-poppins',         
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-poppins',
   display: 'swap',
 });
 const montserrat = Montserrat({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'], 
-  variable: '--font-montserrat',         
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-montserrat',
   display: 'swap',
 });
 const roboto = Roboto({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], 
-  variable: '--font-roboto',         
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-roboto',
   display: 'swap',
 });
 
@@ -46,9 +46,12 @@ export default function RootLayout({ children }) {
         className={`${poppins.variable} ${montserrat.variable} antialiased`}
       >
 
-        <Navbar/>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
+        <script>
+          AOS.init();
+        </script>
       </body>
     </html>
   );

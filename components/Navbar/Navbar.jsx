@@ -13,7 +13,9 @@ const Navbar = () => {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="font-poppins fixed top-0  w-full z-50 font-poppins bg-gradient-to-r from-blue-900 to-orange-500">
+    
+
+    <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-900 to-orange-500">
       {/* Top contact bar */}
       <div className="text-white flex justify-end gap-3 px-2  py-1 md:gap-6 px-4 text-xs md:text-sm">
         <div className="flex items-center gap-2">
@@ -27,7 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="bg-white text-black flex items-center justify-between px-2 md:justify-around   ">
+      <nav className=" bg-white text-black flex items-center justify-between px-2 md:justify-around   ">
         {/* Logo */}
         <Link href="/">
           <Image src="/cww.svg" width={150} height={150} alt="Logo" />
