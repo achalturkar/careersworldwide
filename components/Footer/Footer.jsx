@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="flex  justify-around">
                         <div className="flex">
                             <Image
-                                src="/logo1.jpg"
+                                src="/Careers Worldwide LOGO.jpg"
                                 alt="CareersWorldWide Logo"
                                 width={250}
                                 height={250}
