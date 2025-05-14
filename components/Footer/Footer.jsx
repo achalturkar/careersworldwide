@@ -4,7 +4,7 @@ import { FaFacebook, FaWhatsapp } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-const Footers = () => {
+const Footer = () => {
     return (
         <>
             <footer className="bg-[#ffffff] text-[#000000]">
@@ -72,4 +72,4 @@ const Footers = () => {
     );
 };
 
-export default Footers;
+export default Footer;
