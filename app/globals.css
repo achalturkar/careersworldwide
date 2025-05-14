@@ -4,4 +4,6 @@
 .my-color{
   background-color: #F89C1D;
 }
-
+body {
+  font-family:  var(--font-montserrat),  sans-serif;
+}
