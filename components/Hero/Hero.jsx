@@ -19,8 +19,8 @@ const Hero = () => {
       <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center items-center">
         <Image
           src="/image.png"
-          width={400}
-          height={400}
+          width={370}
+          height={370}
           alt="hero image"
           className="mx-auto object-cover"
                   />

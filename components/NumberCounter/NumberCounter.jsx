@@ -34,8 +34,9 @@ const NumberCounter = () => {
                         >
                             {({ countUpRef }) => <span ref={countUpRef} />}
                         </CountUp>
-                    </p>                    <div className="border border-2 bg-orange-500 w-24 "></div>
-                    <p className="text-xl font-bold ">Client serve</p>
+                    </p>
+                    <div className="border border-2 bg-orange-500 w-24 "></div>
+                    <p className="text-xl font-bold ">Clients Serve </p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
                     <p className="text-3xl font-bold ">
@@ -48,7 +49,8 @@ const NumberCounter = () => {
                         >
                             {({ countUpRef }) => <span ref={countUpRef} />}
                         </CountUp>
-                    </p>                    <div className="border border-2 bg-orange-500 w-24 "></div>
+                    </p>
+                    <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Year Of Experience</p>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
@@ -62,10 +64,11 @@ const NumberCounter = () => {
                         >
                             {({ countUpRef }) => <span ref={countUpRef} />}
                         </CountUp>
-                    </p>                    <div className="border border-2 bg-orange-500 w-24 "></div>
+                    </p>
+                    <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Year Of Experience</p>
                 </div>
-
+               
             </div>
         </section>
     )
