@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-const Services = ({ service }) => {
+const Card = ({ Detail }) => {
 
     return (
 
        
         <ul className=" gap-4 p-3 flex flex-col flex-wrap  md:flex-row justify-center items-start ">
-            {service.map((each) => (
+            {Detail.map((each) => (
                 <li key={each.id}>
                     <div className="  p-3 flex flex-col justify-center items-start bg-gray-100 w-full rounded-lg shadow-lg  md:w-68 md:h-102 overflow-hidden hover:shadow-2xl hover:bg-white">
                         {/* service image */}
@@ -27,19 +27,12 @@ const Services = ({ service }) => {
                                     Read More
                                 </div>
                             </Link>
-
                         </div>
-
                     </div>
-
                 </li>
             ))}
-
-
         </ul>
-
-
     )
 }
 
-export default Services;
+export default Card;
