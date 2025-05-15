@@ -7,6 +7,7 @@ import { RiContractFill } from "react-icons/ri";
 import { FaHandshake } from "react-icons/fa";
 import { FaFileCode } from "react-icons/fa";
 import { PiOfficeChairFill } from "react-icons/pi";
+import DetailImg from "@/components/DetailImg/DetailImg";
 
 
 
@@ -17,7 +18,7 @@ export default function Home() {
     {
       id: 1,
       head: "Head Hunting",
-      desc: "We don't deal only in filling senior positions as the head hunter defines itself.We cater to our client needs wherein the position is called hard-to-fill vacancy at any level",
+      desc: "We don't deal only in filling senior positions as the head hunter defines itself.We cater to our client needs wherein the position is called hard-to-fill vacancy at any level...",
       link: "/services/headhunting",
       img: <MdPersonSearch />
 
@@ -26,7 +27,7 @@ export default function Home() {
     {
       id: 2,
       head: "Contractual Recruitment",
-      desc: "Contractual hire is a great option for your temporary and flexible staffing needs.We have got you covered for your project to project needs which we understand are hard to fill in due to candidates asking for permanent roles.",
+      desc: "Contractual hire is a great option for your temporary and flexible staffing needs.We have got you covered for your project to project needs which we understand are hard to fill in due to candidates asking for permanent roles...",
       link: "/services/recruitmentprocessoutsourcing",
       img: <RiContractFill />
 
@@ -35,7 +36,7 @@ export default function Home() {
     {
       id: 3,
       head: "Payroll Management",
-      desc: "we offer professional Payroll management services to simplify your payroll processes and minimize administrative burdens.",
+      desc: "we offer professional Payroll management services to simplify your payroll processes and minimize administrative burdens...",
       link: "/services/payrollmanagement",
       img: <FaHandshake />
 
@@ -44,7 +45,7 @@ export default function Home() {
     {
       id: 4,
       head: "Permanent Recruitment",
-      desc: "Dedicated talent is required to build a strong foundation, which is what we have realised over the years from our experience in the recruitment field",
+      desc: "Dedicated talent is required to build a strong foundation, which is what we have realised over the years from our experience in the recruitment field...",
       link: "/services/permanentrecruitment",
       img: <PiOfficeChairFill />
 
@@ -53,7 +54,7 @@ export default function Home() {
     {
       id: 5,
       head: "Recruitment Process Outsourcing",
-      desc: "Charter your HR department with cost effective, flexible and customisable RPO services to sure perfection in hiring the right talent in any time frame.",
+      desc: "Charter your HR department with cost effective, flexible and customisable RPO services to sure perfection in hiring the right talent in any time frame...",
       link: "/services/recruitmentprocessoutsourcing",
       img: <FaFileCode />
 
@@ -76,6 +77,10 @@ export default function Home() {
           <h1 className="text-3xl text-orange-400 font-extrabold ">Our Services</h1>
         </div>
         <Card Detail={service} />
+      </section>
+
+      <section className="bg-[url('/polygon.svg')] bg-cover bg-no-repeat">
+        <DetailImg />
       </section>
 
 

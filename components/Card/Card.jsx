@@ -8,7 +8,7 @@ const Card = ({ Detail }) => {
         <ul className=" gap-4 p-3 flex flex-col flex-wrap  md:flex-row justify-center items-start ">
             {Detail.map((each) => (
                 <li key={each.id}>
-                    <div className="  p-3 flex flex-col justify-center items-start bg-gray-100 w-full rounded-lg shadow-lg  md:w-68 md:h-102 overflow-hidden hover:shadow-2xl hover:bg-white">
+                    <div className="  p-3 flex flex-col justify-center items-start bg-gray-50 w-full rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:bg-whit  md:w-68 md:h-102 e">
                         {/* service image */}
                         <div className="h-2/11 ">
                            <div className="bg-blue-300 items-center  rounded-full p-3"> {each.img} </div>
@@ -23,7 +23,7 @@ const Card = ({ Detail }) => {
                         {/* read more link */}
                         <div className="h-1.5/11">
                             <Link href={each.link}>
-                                <div className="p-2 font-bold text-center text-md bg-orange-400 rounded-full hover:bg-orange-500 text-white">
+                                <div className="p-2 font-bold text-center text-md bg-orange-400 rounded-full hover:bg-orange-500 text-white ">
                                     Read More
                                 </div>
                             </Link>
