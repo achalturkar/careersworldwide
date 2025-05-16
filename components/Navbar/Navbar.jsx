@@ -50,16 +50,15 @@ const Navbar = () => {
               <li className="p-1 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/contractualrecruitment">Contractual Recruitment</Link></li>
               <li className="p-1 hover:bg-gray-100 hover:text-blue-900"><Link href="/services/payrollmanagement">Payroll Management</Link></li>
               <li className="p-1 hover:bg-gray-100 hover:text-blue-900"><Link href="/services/permanentrecruitment">Permanent Recruitment</Link></li>
-              <li className="p-1 hover:bg-gray-100 hover:text-blue-900"><Link href="/services/recruitmentprocessoutsourcing">Recruitment Process Outsourcing</Link></li>
             </ul>
           </li>
 
           <Link href="/howwework"><li className="hover:text-blue-900">HOW WE WORK</li></Link>
-          <Link href="/careers"><li className="hover:text-blue-900">CAREERS</li></Link>
+          <Link href="/expertise"><li className="hover:text-blue-900">EXPERTISE</li></Link>
           <Link href="/contact"><li className="hover:text-blue-900">CONTACT US</li></Link>
         </ul>
-        <Link href="/enquiry">
-          <div className="cursor-pointer hidden lg:block p-2 bg-green-500 rounded-lg text-white font-semibold" >Enquiry</div>
+        <Link href="/jobopening">
+          <div className="cursor-pointer hidden lg:block p-2 bg-blue-900 hover:bg-blue-950 rounded-xl text-white font-bold" >JOB OPENING</div>
         </Link>
 
         {/* toggle for mobile */}
@@ -90,16 +89,15 @@ const Navbar = () => {
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/contractualrecruitment" onClick={() => setMenuOpen(false)}>Contractual Recruitment</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/payrollmanagement" onClick={() => setMenuOpen(false)}>Payroll Management</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/permanentrecruitment" onClick={() => setMenuOpen(false)}>Permanent Recruitment</Link></li>
-                <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/recruitmentprocessoutsourcing" onClick={() => setMenuOpen(false)}>Recruitment Process Outsourcing</Link></li>
               </ul>
             )}
           </li>
 
           <Link href="/howwework" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">HOW WE WORK</li></Link>
-          <Link href="/careers" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">CAREERS</li></Link>
+          <Link href="/expertise" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">Expertise</li></Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">CONTACT US</li></Link>
-          <Link href="/enquiry">
-            <div className=" cursor-pointer mt-4 p-2 bg-green-500 rounded-lg text-white" >Enquiry</div>
+          <Link href="/jobopening">
+            <div className=" cursor-pointer mt-4 p-2 bg-blue-900 hover:bg-blue-950 rounded-lg text-white text-center " >JOB OPENING</div>
           </Link>
         </ul>
       </div>
