@@ -9,6 +9,7 @@ import { FaFileCode } from "react-icons/fa";
 import { PiOfficeChairFill } from "react-icons/pi";
 import DetailImg from "@/components/DetailImg/DetailImg";
 import { MdDoubleArrow } from "react-icons/md";
+// import ThumbSwiper from "@/components/ThumbSwiper/ThumbSwiper";
 
 
 
@@ -63,6 +64,34 @@ export default function Home() {
     },
   ]
 
+  const planData = [
+         {
+            title: "Our Mission",
+            img: "/assets/images/mountain.webp",
+            head: "Empowering Growth and Innovation",
+            desc: "At TechCombo, we empower businesses with tailored talent solutions and innovative services while creating meaningful opportunities for professionals to grow and succeed.",
+         },
+         {
+            title: "Our Vision",
+            img: "/assets/images/bulb.webp",
+            head: "A Vision for Excellence",
+            desc: "To be a trusted leader in workforce solutions and IT project development, driving innovation, efficiency, and sustainable growth for businesses and professionals.",
+         },
+         {
+            title: "Our Value",
+            img: "/assets/images/dia.webp",
+            head: "Core Values That Inspire Trust",
+            desc: "At TechCombo, we uphold excellence, integrity, innovation, collaboration, and opportunity delivering quality services, fostering trust, embracing technology, building partnerships, and empowering growth for all.",
+         },
+         {
+            title: "Our Goal",
+            img: "/assets/images/archery.webp",
+            head: "Goals That Drive Success",
+            desc: "To lead in staffing, outsourcing, and IT project development by connecting businesses with top talent, offering diverse career opportunities, and fostering growth through impactful solutions.",
+         },
+
+      ]
+
 
   return (
     <main>
@@ -88,6 +117,13 @@ export default function Home() {
       <section className="bg-[url('/polygon.svg')] bg-cover bg-no-repeat">
         <DetailImg />
       </section>
+{/* 
+      <section>
+
+        <ThumbSwiper planData={planData}/>
+
+
+      </section> */}
 
 
 
