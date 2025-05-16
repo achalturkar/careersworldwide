@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import { Poppins, Roboto, Montserrat } from 'next/font/google';
 import Footer from "@/components/Footer/Footer";
-
+import TopUpButton from "@/components/TopUpButton/TopUpButton";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -49,6 +49,8 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <Footer />
+        <TopUpButton />
+
         <script>
           AOS.init();
         </script>

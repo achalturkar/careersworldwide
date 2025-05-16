@@ -8,6 +8,7 @@ import { FaHandshake } from "react-icons/fa";
 import { FaFileCode } from "react-icons/fa";
 import { PiOfficeChairFill } from "react-icons/pi";
 import DetailImg from "@/components/DetailImg/DetailImg";
+import { MdDoubleArrow } from "react-icons/md";
 
 
 
@@ -71,10 +72,15 @@ export default function Home() {
       <NumberCounter />
 
 
-      <section className="flex flex-col p-4">
+      <section className="flex flex-col p-4 md:p-8">
         <div className="leading-tight">
           <h3 className="text-lg">What We Offers</h3>
-          <h1 className="text-3xl text-orange-400 font-extrabold ">Our Services</h1>
+          <div className="border w-36 my-1"></div>
+          <div className="flex justify-start items-center ">
+             <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Services </h1>
+             <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold"/>
+          </div>
+         
         </div>
         <Card Detail={service} />
       </section>
@@ -82,6 +88,7 @@ export default function Home() {
       <section className="bg-[url('/polygon.svg')] bg-cover bg-no-repeat">
         <DetailImg />
       </section>
+
 
 
 

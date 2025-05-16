@@ -54,18 +54,16 @@ const DetailImg = () => {
                     width={300}
                     height={300}
                     alt="desc Image"
-                    className="rounded-xl"
+                    className="rounded-xl h-100px w-auto md:h-300px"
 
                 />
-
             </div>
 
             <div>
-
                 <div className="">
-                    <h1 className="text-3xl md:text-4xl font-black text-blue-950 ">Driven by Excellence,<br /> Powered by Expertise</h1>
+                    <h1 className="text-2xl md:text-4xl font-black text-blue-950 ">Driven by Excellence, Powered by Expertise</h1>
                     <div className="border w-32 my-2"></div>
-                    <p className=" ">Our core strengths fuel smart hiring decisions <br /> and long-term success.</p>
+                    <p className=" ">Our core strengths fuel smart hiring decisions and long-term success.</p>
                     
                 </div>
 
@@ -83,11 +81,7 @@ const DetailImg = () => {
                        
                     </ul>
                 </div>
-
-
             </div>
-
-
         </div>
     )
 }
