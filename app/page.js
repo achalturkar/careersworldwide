@@ -108,6 +108,9 @@ export default function Home() {
       img: "/logo/fc.svg"
     },
     {
+      img: "/logo/v.svg"
+    },
+    {
       img: "/logo/tc.webp"
     },
    
@@ -166,3 +169,4 @@ export default function Home() {
     </main>
   );
 }
+

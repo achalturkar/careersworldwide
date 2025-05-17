@@ -15,6 +15,7 @@ const SliderLogo = ({ logo }) => {
             >
 
 
+
                 {
                     logo.map((each, index) => (
                         <Slider.Slide key={index}>

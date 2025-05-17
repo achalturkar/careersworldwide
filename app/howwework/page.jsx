@@ -1,9 +1,12 @@
+ 
+ import HeroSection from "@/components/HeroSection/HeroSection";
+ 
  const HowWeWork = () =>{
 
 
     return (
         <>
-         <h1>How We Work</h1>
+        <HeroSection title="How We Work"/>
         
         
         </>
