@@ -87,13 +87,25 @@ export default function Home() {
       img: "/logo/globant.svg"
     },
     {
-      img: "/logo/ICLogo.svg"
-    },
-    {
       img: "/logo/jade.svg"
     },
     {
-      img: "/logo/tsystem.svg"
+      img: "/logo/ast.svg"
+    },
+    {
+      img: "/logo/es.png"
+    },
+    {
+      img: "/logo/ts.png"
+    },
+    {
+      img: "/logo/ll.png"
+    },
+    {
+      img: "/logo/pp.png"
+    },
+    {
+      img: "/logo/fc.svg"
     },
     {
       img: "/logo/tc.webp"
@@ -114,7 +126,7 @@ export default function Home() {
       {/* Services display Section */}
       <section className="flex flex-col p-4 md:p-8">
         <div className="leading-tight">
-          <h3 className="text-lg">What We Offers</h3>
+          <h3 className="text-lg font-semibold text-blue-900">What We Offers</h3>
           <div className="border w-36 my-1"></div>
           <div className="flex justify-start items-center ">
             <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Services </h1>
@@ -136,7 +148,7 @@ export default function Home() {
       {/* Foundation section Section */}
       <section className="flex flex-col p-4 md:p-8 ">
         <div className="leading-tight">
-          <h3 className="text-lg">What Drive Us</h3>
+          <h3 className="text-lg font-semibold text-blue-900">What Drive Us</h3>
           <div className="border w-36 my-1"></div>
           <div className="flex justify-start items-center mb-8">
             <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Foundation </h1>

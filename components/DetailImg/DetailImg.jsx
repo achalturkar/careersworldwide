@@ -46,7 +46,7 @@ const DetailImg = () => {
     ]
     return (
 
-        <div className="flex flex-col md:flex-row justify-center items-center p-2 md:p-8 mx-4 md:mx-32 gap-8  md:gap-16">
+        <div className="flex flex-col md:flex-row justify-center items-center p-3 md:p-12 mx-4 md:mx-32 gap-8  md:gap-16">
 
             <div>
                 <Image
