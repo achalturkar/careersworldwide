@@ -28,7 +28,7 @@ const ThumbSwiper = ({ planData }) => {
     }, []);
 
     return (
-        <div className=" px-8  md:px-32 flex flex-col  items-center" data-aos="fade-up">
+        <div className=" px-4  md:px-32" data-aos="fade-up">
             <Swiper
                 direction={direction}
                 onSwiper={setThumbsSwiper}
@@ -37,18 +37,18 @@ const ThumbSwiper = ({ planData }) => {
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className={`h-full gap-2 ${direction === "vertical" ? "max-h-[400px]" : ""}`}
+                className={`h-full  ${direction === "vertical" ? "max-h-[400px]" : ""}`}
             >
                 {planData.map((plan, index) => (
                     <SwiperSlide key={index}>
                         <div
                             onClick={() => setActiveIndex(index)}
-                            className={`relative p-2 md:p-4 font-bold flex flex-col items-center cursor-pointer w-70  ${activeIndex === index
+                            className={`relative p-4 font-bold flex flex-col items-center cursor-pointer  ${activeIndex === index
                                 ? "bg-blue-950 scale-105 text-white"
                                 : "bg-gray-100 text-blue-950 md:border-x-1"
                                 }`}
                         >
-                            {plan.icon && <div className="text-3xl md:text-4xl mb-2 ">{plan.icon}</div>}
+                            {plan.icon && <div className=" md:text-4xl mb-2 ">{plan.icon}</div>}
                             <h4 className="text-center text-base md:text-xl">{plan.title}</h4>
                         </div>
                     </SwiperSlide>
@@ -58,10 +58,7 @@ const ThumbSwiper = ({ planData }) => {
             {/* Description below swiper for mobile */}
             {planData[activeIndex] && (
                 <div className="mt-4   flex flex-col md:flex-row items-start  px-2 md:px-32 w-full ">
-
-                    <div>
                         <p className="text-blue-950 text-lg font-semibold">{planData[activeIndex].desc}</p>
-                    </div>
                 </div>
             )}
         </div>
