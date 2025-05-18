@@ -19,7 +19,7 @@ const SliderLogo = ({ logo }) => {
                 {
                     logo.map((each, index) => (
                         <Slider.Slide key={index}>
-                            <img src={each.img} alt="any" className='w-36' />
+                            <img src={each.img} alt="any" className='w-28' />
                         </Slider.Slide>
 
                     ))

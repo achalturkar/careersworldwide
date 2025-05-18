@@ -1,3 +1,4 @@
+import ContactButton from "@/components/ContactButton/ContactButton";
 import HandleMove from "@/components/HandleMove/HandleMove";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
@@ -17,7 +18,7 @@ const HeadHunting = () => {
                to the right move. We engage these passive candidates through strategic research, direct communication, and a deep understanding of your business needs."
             />
 
-
+           <ContactButton />
 
         </main>
     )

@@ -13,7 +13,7 @@ const HeroSection = ({ title, subtitle, img }) => {
             </div>
 
             <div className="flex flex-col items-center justify-center">
-                <h1 className="text-4xl font-extrabold text-blue-950 pt-8">{title}</h1>
+                <h1 className="text-4xl font-extrabold text-blue-950 pt-8 text-center">{title}</h1>
                 <p className="text-lg font-semibold text-center">{subtitle}</p>
             </div>
         </div>

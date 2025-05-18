@@ -1,3 +1,4 @@
+import ContactButton from "@/components/ContactButton/ContactButton";
 import HeroSection from "@/components/HeroSection/HeroSection";
 
 
@@ -9,18 +10,17 @@ const About = () => {
 
 
 
-    <div className="mt-26">
+    <main className="mt-26">
 
       <HeroSection title="About Us" img="/abc.jpg" />
 
 
       
-      <div className="h-full bg-green-200">
-        <h1 className="text-5xl text-center ">About</h1>
 
-      </div>
 
-    </div>
+      <ContactButton />
+
+    </main>
 
   )
 

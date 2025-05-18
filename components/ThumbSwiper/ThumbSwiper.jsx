@@ -1,5 +1,6 @@
 "use client"
 
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
 import { Navigation, Thumbs, FreeMode } from "swiper/modules";
@@ -27,27 +28,27 @@ const ThumbSwiper = ({ planData }) => {
     }, []);
 
     return (
-        <div className=" px-4 md:px-32" data-aos="fade-up">
+        <div className=" px-4  md:px-32" data-aos="fade-up">
             <Swiper
                 direction={direction}
                 onSwiper={setThumbsSwiper}
-                spaceBetween={40}
-                slidesPerView={ 4}
+                spaceBetween={0}
+                slidesPerView={4}
                 freeMode={true}
                 watchSlidesProgress={true}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className={`h-full ${direction === "vertical" ? "max-h-[400px]" : ""}`}
+                className={`h-full gap-2 ${direction === "vertical" ? "max-h-[400px]" : ""}`}
             >
                 {planData.map((plan, index) => (
                     <SwiperSlide key={index}>
                         <div
                             onClick={() => setActiveIndex(index)}
-                            className={`relative p-4 font-bold flex flex-col items-center cursor-pointer ${activeIndex === index
+                            className={`relative p-4 font-bold flex flex-col items-center cursor-pointer  ${activeIndex === index
                                 ? "bg-blue-950 scale-105 text-white"
                                 : "bg-gray-100 text-blue-950"
                                 }`}
                         >
-                         
+                            {plan.icon && <div className="text-3xl md:text-4xl mb-2 ">{plan.icon}</div>}
                             <h4 className="text-center text-base md:text-xl">{plan.title}</h4>
                         </div>
                     </SwiperSlide>
@@ -56,10 +57,10 @@ const ThumbSwiper = ({ planData }) => {
 
             {/* Description below swiper for mobile */}
             {planData[activeIndex] && (
-                <div className="mt-4   flex flex-col md:flex-row items-start  p-4 w-full md:w-1/2">
-                
+                <div className="mt-4   flex flex-col md:flex-row items-start  px-2 md:px-32 w-full ">
+
                     <div>
-                        <p className="text-blue-950 text-lg">{planData[activeIndex].desc}</p>
+                        <p className="text-blue-950 text-lg font-semibold">{planData[activeIndex].desc}</p>
                     </div>
                 </div>
             )}

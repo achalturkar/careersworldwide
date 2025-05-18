@@ -1,3 +1,4 @@
+import ContactButton from "@/components/ContactButton/ContactButton";
 import HeroSection from "@/components/HeroSection/HeroSection";
 
  
@@ -10,6 +11,9 @@ import HeroSection from "@/components/HeroSection/HeroSection";
         <main className="mt-26">
 
          <HeroSection title="Expertise" img="/exp.jpg"/>
+
+
+         <ContactButton />
         
         
         </main>

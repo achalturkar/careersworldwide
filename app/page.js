@@ -6,11 +6,15 @@ import { MdPersonSearch } from "react-icons/md";
 import { RiContractFill } from "react-icons/ri";
 import { FaHandshake } from "react-icons/fa";
 import { PiOfficeChairFill } from "react-icons/pi";
+import { GiArcheryTarget, GiMountainRoad } from "react-icons/gi";
+import { IoDiamond } from "react-icons/io5";
 import DetailImg from "@/components/DetailImg/DetailImg";
 import { MdDoubleArrow } from "react-icons/md";
 import ThumbSwiper from "@/components/ThumbSwiper/ThumbSwiper";
 import SliderLogo from "@/components/SliderLogo/SliderLogo";
+import ContactButton from "@/components/ContactButton/ContactButton";
 
+import { FaLightbulb } from "react-icons/fa";
 
 
 
@@ -58,18 +62,22 @@ export default function Home() {
 
   const planData = [
     {
+      icon: <GiMountainRoad />,
       title: "Our Mission",
       desc: "Careers Worldwide is dedicated to empowering organizations by providing complete HR, manpower, and training solutions. Our mission is to deliver skilled professionals who align with our clients’ goals through a simple yet effective recruitment process. We aim to support every stage of hiring and training with personalized, professional assistance."
     },
     {
+      icon: <FaLightbulb />,
       title: "Our Vision",
       desc: "We strive to be a globally recognized leader in recruitment and HR consultancy by connecting the right talent with the right opportunities. Our vision is to build a future where organizations thrive through strategic talent acquisition and where professionals achieve their career aspirations seamlessly."
     },
     {
+      icon: <IoDiamond />,
       title: "Our Value",
       desc: "At the core of our work is a strong belief in integrity, excellence, innovation, and commitment to client satisfaction. We value building lasting relationships through ethical practices, continuous improvement, and a customer-first approach in every service we deliver."
     },
     {
+      icon: <GiArcheryTarget />,
       title: "Our Goal",
       desc: "Our goal is to help companies grow with the right talent by offering technology-driven recruitment and consultancy services. We aim to expand our reach, strengthen our candidate database, and continue placing top professionals in key roles across industries and regions."
     },
@@ -113,7 +121,7 @@ export default function Home() {
     {
       img: "/logo/tc.webp"
     },
-   
+
   ]
 
 
@@ -164,7 +172,7 @@ export default function Home() {
 
 
 
-
+      <ContactButton />
 
     </main>
   );
