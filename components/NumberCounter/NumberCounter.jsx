@@ -83,6 +83,7 @@ const NumberCounter = () => {
                     <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Client Retention Rate</p>
                 </div>
+                
               
               
             </div>

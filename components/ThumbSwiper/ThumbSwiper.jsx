@@ -28,7 +28,7 @@ const ThumbSwiper = ({ planData }) => {
     }, []);
 
     return (
-        <div className=" px-4  md:px-32" data-aos="fade-up">
+        <div className=" px-8  md:px-32 flex flex-col  items-center" data-aos="fade-up">
             <Swiper
                 direction={direction}
                 onSwiper={setThumbsSwiper}
@@ -43,9 +43,9 @@ const ThumbSwiper = ({ planData }) => {
                     <SwiperSlide key={index}>
                         <div
                             onClick={() => setActiveIndex(index)}
-                            className={`relative p-4 font-bold flex flex-col items-center cursor-pointer  ${activeIndex === index
+                            className={`relative p-2 md:p-4 font-bold flex flex-col items-center cursor-pointer w-70  ${activeIndex === index
                                 ? "bg-blue-950 scale-105 text-white"
-                                : "bg-gray-100 text-blue-950"
+                                : "bg-gray-100 text-blue-950 md:border-x-1"
                                 }`}
                         >
                             {plan.icon && <div className="text-3xl md:text-4xl mb-2 ">{plan.icon}</div>}
