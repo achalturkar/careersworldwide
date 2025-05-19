@@ -72,6 +72,19 @@ comprehensive database has qualified applicants which enable you to recruit the 
 "
         />
       </section>
+      <section>
+        <ServiceDetail img="/abouts.webp" head="About Careers Worldwide"
+          desc="Careers Worldwide is complete Human Resources, Manpower & Training
+solution provider with offices in India and UK. We have established our operations in
+year 2010 and since have been working with many esteemed organizations and brands
+as successful recruitment partners. Our professional team is offering every possible
+assistance at every stage of operations in recruitment, training, and consultancy."
+          desc2="We have designed simple and effective screening process which will help you with the
+most suitable and quality professionals with prerequisite skills you are looking for. Our
+comprehensive database has qualified applicants which enable you to recruit the best.
+"
+        />
+      </section>
 
 
       <section className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 p-4 md:p-20 md:mx-44">
