@@ -4,6 +4,7 @@ import HandleMove from "@/components/HandleMove/HandleMove";
 import WhyChooseCard from "@/components/WhyChooseCard/WhyChooseCard";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 import Image from "next/image";
+import ImageComponent from "@/components/ImageComponent/ImageComponent";
 
 const About = () => {
 
@@ -46,7 +47,19 @@ const About = () => {
       desc: "We believe in building long-term partnerships through transparent communication, dedicated support, and tailored recruitment strategies that prioritize client needs",
 
     },
+  ];
+
+
+  const profile = [
+
+    {
+      img: "/ii.jpeg",
+      name: "Prasanna Yadav",
+      designation: "Founder"
+    }
   ]
+
+
 
   return (
 
@@ -72,35 +85,20 @@ comprehensive database has qualified applicants which enable you to recruit the 
 "
         />
       </section>
-      <section>
-        <ServiceDetail img="/abouts.webp" head="About Careers Worldwide"
-          desc="Careers Worldwide is complete Human Resources, Manpower & Training
-solution provider with offices in India and UK. We have established our operations in
-year 2010 and since have been working with many esteemed organizations and brands
-as successful recruitment partners. Our professional team is offering every possible
-assistance at every stage of operations in recruitment, training, and consultancy."
-          desc2="We have designed simple and effective screening process which will help you with the
-most suitable and quality professionals with prerequisite skills you are looking for. Our
-comprehensive database has qualified applicants which enable you to recruit the best.
-"
-        />
-      </section>
 
 
-      <section className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 p-4 md:p-20 md:mx-44">
+      <section className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 p-4 max-w-6xl mx-auto">
 
-        <div className="max-w-xl text-gray-800 text-md font-semibold   gap-2">
-
-          <h1 className="mb-2 text-3xl font-extrabold text-blue-950">Your Needs</h1>
+        <div className="w-full md:w-1/2 text-gray-800 text-md font-semibold space-y-4 text-center md:text-left">
+          <h1 className="text-3xl font-extrabold text-blue-950">Your Needs</h1>
           <HandleMove />
 
-          <p className="mb-2">
+          <p>
             Whether your company is transitioning and needs a new C-level executive or is adding a
             new department and want a manager with niche industry experience, Careers Worldwide
             offers consulting Services, Permanent Hiring, Headhunting and a Contractual Hiring that
             are coupled with our technology-assisted vetting system that helps us find the right
             talent every time.
-
           </p>
 
           <p>
@@ -111,26 +109,41 @@ comprehensive database has qualified applicants which enable you to recruit the 
             analysts dedicated to carefully select and assess each individual, our research team
             stays on top of emerging developments in the recruiting world to make sure that we can
             offer compelling hiring solutions paired with the best technology and customer service.
-
           </p>
-
-
         </div>
 
-        <div className="w-1/2">
-
-          <Image src="/exp.webp" alt="needs" width={300} height={250} className="rounded-xl" />
-
-
-
+        <div className="w-full md:w-1/2 flex justify-center">
+          <Image
+            src="/exp.webp"
+            alt="needs"
+            width={300}
+            height={250}
+            className="rounded-xl object-contain"
+          />
         </div>
-
-
 
       </section>
 
-      {/* why choose this service  */}
+
+
+
       <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-20">
+
+        <div className=" flext flex-col justify-center items-center">
+          <h1 className="text-3xl font-bold text-blue-950 ">Meet Our Team</h1>
+          <HandleMove className="items-center" />
+        </div>
+
+        <div>
+          <ImageComponent Profile={profile} />
+        </div>
+      </section>
+
+
+
+
+      {/* why choose this service  */}
+      <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-16">
 
         <div className=" flext flex-col justify-center items-center">
           <h1 className="text-3xl font-bold text-blue-950 ">Why Choose Us?</h1>
