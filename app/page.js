@@ -121,6 +121,9 @@ export default function Home() {
     {
       img: "/logo/tc.webp"
     },
+    {
+      img: "/logo/logos.png"
+    },
 
   ]
 
@@ -137,7 +140,7 @@ export default function Home() {
 
           {/* about company section  */}
       <section>
-        <ServiceDetail img="/hh.jpg" head="Who We Are?"
+        <ServiceDetail img="/hh.webp" head="Who We Are?"
           desc="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people"
           desc2="We combine global reach with local expertise, offering end-to-end staffing solutions tailored to each client’s needs. Whether you're hiring for a niche role or scaling rapidly, Careers Worldwide delivers talent that fits"
         

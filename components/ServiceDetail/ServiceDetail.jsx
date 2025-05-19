@@ -6,7 +6,7 @@ import HandleMove from "../HandleMove/HandleMove";
 // image and explain about service 
 const ServiceDetail = ({ img, head, desc, desc2, alt = "Service Image" }) => {
     return (
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16 p-4">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 p-4">
             <div>
                 <Image src={img} alt={alt} width={250} height={250} className="rounded-md" />
             </div>

@@ -2,7 +2,6 @@
 import ContactButton from "@/components/ContactButton/ContactButton";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Steps from "@/components/Steps/Steps";
-import Whatsapp from "@/components/Whatsapp/Whatsapp";
 
 const HowWeWork = () => {
 
@@ -100,8 +99,6 @@ const HowWeWork = () => {
 
             <ContactButton />
    
-          <Whatsapp />
-
         </main>
     )
 }
