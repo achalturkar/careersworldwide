@@ -4,7 +4,7 @@ import Slider from 'react-infinite-logo-slider'
 const SliderLogo = ({ logo }) => {
 
     return (
-        <div className='bg-gray-100 py-12'>
+        <div className=' py-8'>
             <Slider
                 width="250px"
                 duration={40}

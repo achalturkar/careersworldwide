@@ -42,11 +42,11 @@ const Navbar = () => {
 
           <li className="relative group cursor-pointer">
             <div className="flex items-center gap-1 hover:text-blue-900" onClick={() => setServicesOpen(!servicesOpen)}>
-              SERVICES <FaChevronDown size={12} />
+              SERVICES 
             </div>
             {/* Dropdown */}
             <ul className="absolute top-6 left-var(40%) bg-white shadow-md rounded-md text-md w-68 hidden group-hover:block z-10">
-              <li className="p-1 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/headhunting">Head Huntings</Link></li>
+              <li className="p-1 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/headhunting">Head Hunting</Link></li>
               <li className="p-1 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/contractualrecruitment">Contractual Recruitment</Link></li>
               <li className="p-1 hover:bg-gray-100 hover:text-blue-900"><Link href="/services/payrollmanagement">Payroll Management</Link></li>
               <li className="p-1 hover:bg-gray-100 hover:text-blue-900"><Link href="/services/permanentrecruitment">Permanent Recruitment</Link></li>
@@ -85,7 +85,7 @@ const Navbar = () => {
             </div>
             {servicesOpen && (
               <ul className="pl-4 text-md mt-2 ">
-                <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/headhunting " onClick={() => setMenuOpen(false)}>Head Huntings</Link></li>
+                <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/headhunting " onClick={() => setMenuOpen(false)}>Head Hunting</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/contractualrecruitment" onClick={() => setMenuOpen(false)}>Contractual Recruitment</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/payrollmanagement" onClick={() => setMenuOpen(false)}>Payroll Management</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/permanentrecruitment" onClick={() => setMenuOpen(false)}>Permanent Recruitment</Link></li>

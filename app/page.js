@@ -13,8 +13,8 @@ import { MdDoubleArrow } from "react-icons/md";
 import ThumbSwiper from "@/components/ThumbSwiper/ThumbSwiper";
 import SliderLogo from "@/components/SliderLogo/SliderLogo";
 import ContactButton from "@/components/ContactButton/ContactButton";
-
 import { FaLightbulb } from "react-icons/fa";
+import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 
 
 
@@ -95,7 +95,7 @@ export default function Home() {
       img: "/logo/globant.svg"
     },
     {
-      img: "/logo/jade.svg"
+      img: "/logo/jdg.jpg"
     },
     {
       img: "/logo/ast.svg"
@@ -134,6 +134,17 @@ export default function Home() {
       {/* Number Achieve Section */}
       <NumberCounter />
 
+
+          {/* about company section  */}
+      <section>
+        <ServiceDetail img="/hh.jpg" head="Who We Are?"
+          desc="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people"
+          desc2="We combine global reach with local expertise, offering end-to-end staffing solutions tailored to each client’s needs. Whether you're hiring for a niche role or scaling rapidly, Careers Worldwide delivers talent that fits"
+        
+        
+        />
+      </section>
+
       {/* Services display Section */}
       <section className="flex flex-col p-4 md:p-8">
         <div className="leading-tight">
@@ -154,7 +165,17 @@ export default function Home() {
 
       {/* logo slider */}
 
+        <section className="flex flex-col p-4 md:p-8 ">
+        <div className="leading-tight">
+          <h3 className="text-lg font-semibold text-blue-900">Trusted By the Best</h3>
+          <div className="border w-46 my-1"></div>
+          <div className="flex justify-start items-center ">
+            <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Clients </h1>
+            <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+          </div>
+        </div>
       <SliderLogo logo={logos} />
+      </section>
 
       {/* Foundation section Section */}
       <section className="flex flex-col p-4 md:p-8 ">

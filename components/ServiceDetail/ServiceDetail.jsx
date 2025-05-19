@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HandleMove from "../HandleMove/HandleMove";
 
+
 // to be pointed first section on service pages 
 // image and explain about service 
 const ServiceDetail = ({ img, head, desc, desc2, alt = "Service Image" }) => {
@@ -16,6 +17,8 @@ const ServiceDetail = ({ img, head, desc, desc2, alt = "Service Image" }) => {
                 <p className="mb-2">{desc}</p>
                 <p>{desc2}</p>
             </div>
+
+
         </div>
     );
 };
