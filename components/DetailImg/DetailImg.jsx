@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HandleMove from "../HandleMove/HandleMove";
 
 const DetailImg = () => {
 
@@ -46,7 +47,7 @@ const DetailImg = () => {
     ]
     return (
 
-        <div className="flex flex-col md:flex-row justify-center items-center p-2 md:p-8 mx-4 md:mx-32 gap-8  md:gap-16">
+        <div className="flex flex-col md:flex-row justify-center items-center p-3 md:p-12 mx-4 md:mx-32 gap-8  md:gap-16">
 
             <div>
                 <Image
@@ -62,7 +63,7 @@ const DetailImg = () => {
             <div>
                 <div className="">
                     <h1 className="text-2xl md:text-4xl font-black text-blue-950 ">Driven by Excellence, Powered by Expertise</h1>
-                    <div className="border w-32 my-2"></div>
+                    <HandleMove />
                     <p className=" ">Our core strengths fuel smart hiring decisions and long-term success.</p>
                     
                 </div>

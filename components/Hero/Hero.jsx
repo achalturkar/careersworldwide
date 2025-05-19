@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const Hero = () => {
   return (
     <div className="pt-28 bg-white h-screen w-full flex flex-col px-4 py-8 md:flex-row md:items-center md:px-8 lg:px-16">
@@ -10,9 +11,11 @@ const Hero = () => {
         <p className="font-medium text-lg text-gray-700 leading-tight md:">
           Our recruitment solutions connect you with the right people—fast, efficient, and tailored to your needs.
         </p>
-        <button className="px-6 py-3 bg-green-500 hover:bg-green-600 transition-all rounded-xl text-white font-bold text-lg">
-          Enquiry
+        <Link href="/jobopening">
+        <button className="px-6 py-3 bg-blue-900 hover:bg-blue-950 transition-all rounded-xl text-white font-bold text-lg">
+          JOB OPENING
         </button>
+        </Link>
       </div>
 
       {/* Hero Image */}

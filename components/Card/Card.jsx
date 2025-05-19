@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 const Card = ({ Detail }) => {
 
     return (
@@ -11,7 +10,8 @@ const Card = ({ Detail }) => {
                     <div className="  p-3 flex flex-col justify-center items-start bg-gray-50 w-full rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:bg-whit  md:w-68 md:h-102 e">
                         {/* service image */}
                         <div className="h-2/11 ">
-                           <div className="bg-blue-300 items-center  rounded-full p-3"> {each.img} </div>
+                           <div className="bg-blue-300 items-center  rounded-full p-3">
+                            {each.icon} </div>
 
                         </div>
                         {/* service heading and description */}
