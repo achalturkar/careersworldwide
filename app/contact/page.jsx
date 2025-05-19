@@ -8,14 +8,9 @@ const Contact = () => {
 
         <main>
 
-            <HeroSection title="Contact Us"/>
-            <div className="bg-white pt-32 pb-16 px-4 min-h-screen flex justify-center items-start">
-                <div className="w-full max-w-7xl bg-gradient-to-br from-20% from-cyan-200 via-33% via-cyan-50 to-80% to-cyan-400 border border-black/10 shadow-2xl rounded-3xl p-6 md:p-12">
-                    {/* Heading */}
-                    <div className="flex items-center justify-center mb-10">
-                        <h1 className="text-4xl md:text-5xl font-semibold text-center">Contact Us</h1>
-                    </div>
-
+            <HeroSection title="Contact Us" />
+            <div className="bg-[url('/contactbg.svg')] bg-no-repeat bg-cover pt-32 pb-16 px-4 min-h-screen flex justify-center items-start">
+                <div className="w-full max-w-7xl bg-gray-100 border border-black/10 shadow-2xl rounded-3xl p-6 md:p-12">
                     {/* Main Content */}
                     <div className="flex flex-col md:flex-row justify-center items-center gap-10">
                         {/* Form Section */}
@@ -62,7 +57,7 @@ const Contact = () => {
 
                                 <div className="flex justify-center">
                                     <button
-                                        className="bg-[#00C951] hover:bg-[#00c903] text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline"
+                                        className="bg-blue-900 hover:bg-blue-950 text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline"
                                         type="button"
                                     >
                                         Submit
@@ -85,15 +80,15 @@ const Contact = () => {
                             ></iframe>
                             <div className="space-y-2">
                                 <div className="flex items-center space-x-2 mt-4.5">
-                                    <IoCallOutline className="mt-1 text-black" />
+                                    <IoCallOutline className="mt-1 text-black text-2xl" />
                                     <span className="text-black">9850041780</span>
                                 </div>
                                 <div className="flex items-center space-x-2 mt-4.5">
-                                    <MdOutlineEmail className="mt-1 text-black" />
-                                    <span className="text-black">recruitment@careersworldwide.in</span>
+                                    <MdOutlineEmail className="mt-1 text-black text-2xl" />
+                                    <span className="text-black ">recruitment@careersworldwide.in</span>
                                 </div>
                                 <div className="flex items-center space-x-2 mt-4.5">
-                                    <IoLocationOutline className="mt-1 text-black" />
+                                    <IoLocationOutline className="mt-1 text-black text-2xl" />
                                     <span className="text-black">Office No 5, 2nd floor, Siddhivinayak towers, Bibvewadi Road, Pune 411037, India</span>
                                 </div>
                             </div>
