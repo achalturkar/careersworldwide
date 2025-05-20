@@ -103,4 +103,9 @@ const HowWeWork = () => {
     )
 }
 
+export const metadata = {
+  title: "How We Work - CWW",
+  description: "Recruitment Company",
+};
+
 export default HowWeWork;

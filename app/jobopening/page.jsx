@@ -52,4 +52,9 @@ const JobOpenings = () => {
     )
 }
 
+export const metadata = {
+  title: "Job Opening - CWW",
+  description: "Recruitment Company",
+};
+
 export default JobOpenings;

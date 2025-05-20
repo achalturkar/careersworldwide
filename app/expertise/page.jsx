@@ -81,6 +81,11 @@ From emerging technologies to legacy systems, our expertise spans all crucial ar
 
         </main>
     )
-}
+};
+
+export const metadata = {
+  title: "Expertise - CWW",
+  description: "Recruitment Company",
+};
 
 export default Expertise;

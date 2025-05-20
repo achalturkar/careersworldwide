@@ -12,4 +12,9 @@ const Enquiry = () =>{
     )
 }
 
+export const metadata = {
+  title: "Enquiry - CWW",
+  description: "Recruitment Company",
+};
+
 export default Enquiry;

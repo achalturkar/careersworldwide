@@ -79,5 +79,9 @@ const ContractualRecruitment = () => {
         </main>
     )
 }
+export const metadata = {
+  title: "Contractual Recruitment - CWW",
+  description: "Recruitment Company",
+};
 
 export default ContractualRecruitment;

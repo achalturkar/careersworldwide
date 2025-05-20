@@ -79,4 +79,9 @@ const PayrollManagement = () => {
     )
 }
 
+export const metadata = {
+  title: "Payroll Management - CWW",
+  description: "Recruitment Company",
+};
+
 export default PayrollManagement;

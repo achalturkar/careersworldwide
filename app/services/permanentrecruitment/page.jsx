@@ -83,4 +83,9 @@ const PermanentRecruitment = () => {
     )
 }
 
+export const metadata = {
+  title: "Permanent Recruitment - CWW",
+  description: "Recruitment Company",
+};
+
 export default PermanentRecruitment;

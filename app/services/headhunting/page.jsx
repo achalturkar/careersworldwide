@@ -83,4 +83,9 @@ const HeadHunting = () => {
     )
 }
 
+export const metadata = {
+  title: "Head Hunting - CWW",
+  description: "Recruitment Company",
+};
+
 export default HeadHunting;

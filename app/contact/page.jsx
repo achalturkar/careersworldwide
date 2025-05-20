@@ -100,4 +100,9 @@ const Contact = () => {
     );
 };
 
+export const metadata = {
+  title: "Contact - CWW",
+  description: "Recruitment Company",
+};
+
 export default Contact;
