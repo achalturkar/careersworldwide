@@ -8,7 +8,7 @@ const Contact = () => {
 
         <main>
 
-            <HeroSection title="Contact Us" />
+            <HeroSection title="Contact Us" subtitle="Let’s Connect and Build Something Great Together" />
             <div className="bg-[url('/contactbg.svg')] bg-no-repeat bg-cover pt-32 pb-16 px-4 min-h-screen flex justify-center items-start">
                 <div className="w-full max-w-7xl bg-gray-100 border border-black/10 shadow-2xl rounded-3xl p-6 md:p-12">
                     {/* Main Content */}
