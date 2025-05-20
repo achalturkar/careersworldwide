@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const ImageComponent = ({ Profile }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-40">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-4 md:mx-40   ">
       {Profile.map((each, index) => (
-        <div key={index} className="flex flex-col items-center ">
+        <div key={index} className="flex flex-col justify-center items-center ">
           <Image
             src={each.img}
             alt={each.name}
             width={150}
             height={150}
-            className="rounded-2xl object-cover"
+            className="rounded-lg "
           />
 
           <div className="flex gap-3 mt-3 text-black text-xl ">

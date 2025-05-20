@@ -87,10 +87,10 @@ comprehensive database has qualified applicants which enable you to recruit the 
       </section>
 
 
-      <section className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 p-4 max-w-6xl mx-auto">
+      <section className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 p-4 md:p-12 max-w-6xl mx-auto">
 
-        <div className="w-full md:w-1/2 text-gray-800 text-md font-semibold space-y-4 text-center md:text-left">
-          <h1 className="text-3xl font-extrabold text-blue-950">Your Needs</h1>
+        <div className="w-full md:w-1/2 text-gray-800 text-md font-semibold space-y-4 md:text-left">
+          <h1 className="text-3xl font-extrabold text-blue-950 text-start">Your Needs</h1>
           <HandleMove />
 
           <p>
@@ -127,7 +127,7 @@ comprehensive database has qualified applicants which enable you to recruit the 
 
 
 
-      <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-20">
+      <section className="flex flex-col px-2 md:px-20  gap-3 md:gap-4 my-4 md:my-20">
 
         <div className=" flext flex-col justify-center items-center">
           <h1 className="text-3xl font-bold text-blue-950 ">Meet Our Team</h1>
