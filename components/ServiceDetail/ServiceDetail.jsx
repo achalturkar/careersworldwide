@@ -10,7 +10,7 @@ const ServiceDetail = ({ img, head, desc, desc2, alt = "Service Image" }) => {
             <div  data-aos="fade-right">
                 <Image src={img} alt={alt} width={250} height={250} className="rounded-md" />
             </div>
-            <div className="max-w-xl text-gray-800 text-md font-semibold   gap-2"  data-aos="fade-left"> 
+            <div className="max-w-xl text-gray-800 text-md font-semibold   gap-2"  data-aos="fade-up"> 
                 <h1 className="mb-2 text-3xl font-extrabold text-blue-950 ">{head}</h1>
                 <HandleMove />
 
