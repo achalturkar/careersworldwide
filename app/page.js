@@ -2,10 +2,7 @@ import Hero from "@/components/Hero/Hero";
 import NumberCounter from "@/components/NumberCounter/NumberCounter";
 import Image from "next/image";
 import Card from "@/components/Card/Card";
-import { MdPersonSearch } from "react-icons/md";
-import { RiContractFill } from "react-icons/ri";
-import { FaHandshake } from "react-icons/fa";
-import { PiOfficeChairFill } from "react-icons/pi";
+import { FaUserTie, FaHandshake, FaMoneyCheckAlt, FaUserCheck } from "react-icons/fa";
 import { GiArcheryTarget, GiMountainRoad } from "react-icons/gi";
 import { IoDiamond } from "react-icons/io5";
 import DetailImg from "@/components/DetailImg/DetailImg";
@@ -26,7 +23,7 @@ export default function Home() {
       head: "Head Hunting",
       desc: "We don't deal only in filling senior positions as the head hunter defines itself.We cater to our client needs wherein the position is called hard-to-fill vacancy at any level...",
       link: "/services/headhunting",
-      icon: <MdPersonSearch />
+      icon:<FaUserTie />,
 
 
     },
@@ -35,7 +32,7 @@ export default function Home() {
       head: "Contractual Recruitment",
       desc: "Contractual hire is a great option for your temporary and flexible staffing needs.We have got you covered for your project to project needs which we understand are hard to fill in due to candidates asking for permanent roles...",
       link: "/services/recruitmentprocessoutsourcing",
-      icon: <RiContractFill />
+      icon: <FaHandshake />,
 
 
     },
@@ -44,7 +41,7 @@ export default function Home() {
       head: "Payroll Management",
       desc: "we offer professional Payroll management services to simplify your payroll processes and minimize administrative burdens...",
       link: "/services/payrollmanagement",
-      icon: <FaHandshake />
+      icon: <FaMoneyCheckAlt />,
 
 
     },
@@ -53,7 +50,7 @@ export default function Home() {
       head: "Permanent Recruitment",
       desc: "Dedicated talent is required to build a strong foundation, which is what we have realised over the years from our experience in the recruitment field...",
       link: "/services/permanentrecruitment",
-      icon: <PiOfficeChairFill />
+      icon: <FaUserCheck />,
 
 
     },
@@ -150,8 +147,8 @@ export default function Home() {
 
       {/* Services display Section */}
       <section className="flex flex-col p-4 md:p-8">
-        <div className="leading-tight">
-          <h3 className="text-lg font-semibold text-blue-900">What We Offers</h3>
+        <div className="leading-tight" data-aos="fade-right">
+          <h3 className="text-lg font-semibold text-blue-900" >What We Offers</h3>
           <div className="border w-36 my-1"></div>
           <div className="flex justify-start items-center ">
             <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Services </h1>
@@ -169,7 +166,7 @@ export default function Home() {
       {/* logo slider */}
 
         <section className="flex flex-col p-4 md:p-8 ">
-        <div className="leading-tight">
+        <div className="leading-tight" data-aos="fade-right">
           <h3 className="text-lg font-semibold text-blue-900">Trusted By the Best</h3>
           <div className="border w-46 my-1"></div>
           <div className="flex justify-start items-center ">
@@ -182,7 +179,7 @@ export default function Home() {
 
       {/* Foundation section Section */}
       <section className="flex flex-col p-4 md:p-8 ">
-        <div className="leading-tight">
+        <div className="leading-tight" data-aos="fade-right">
           <h3 className="text-lg font-semibold text-blue-900">What Drive Us</h3>
           <div className="border w-36 my-1"></div>
           <div className="flex justify-start items-center mb-8">
@@ -200,5 +197,11 @@ export default function Home() {
 
     </main>
   );
+
+  
 }
+export const metadata = {
+  title: "Careers Worldwide - Pune",
+  description: "Recruitment Company",
+};
 

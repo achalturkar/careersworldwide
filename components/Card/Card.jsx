@@ -7,10 +7,10 @@ const Card = ({ Detail }) => {
         <ul className=" gap-4 p-3 flex flex-col flex-wrap  md:flex-row justify-center items-start ">
             {Detail.map((each) => (
                 <li key={each.id}>
-                    <div className="  p-3 flex flex-col justify-center items-start bg-gray-50 w-full rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:bg-whit  md:w-68 md:h-102 e">
+                    <div className="  p-3 flex flex-col justify-center items-start bg-gray-50 w-full rounded-lg shadow-lg overflow-hidden hover:shadow-2xl hover:bg-whit  md:w-68 md:h-102 " data-aos="fade-up">
                         {/* service image */}
                         <div className="h-2/11 ">
-                           <div className="bg-blue-300 items-center  rounded-full p-3">
+                           <div className="bg-blue-300 items-center text-2xl rounded-full p-3">
                             {each.icon} </div>
 
                         </div>

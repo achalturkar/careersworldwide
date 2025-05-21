@@ -96,7 +96,7 @@ const Navbar = () => {
           <Link href="/howwework" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">HOW WE WORK</li></Link>
           <Link href="/expertise" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">EXPERTISE</li></Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)}><li className="hover:text-blue-900 ">CONTACT US</li></Link>
-          <Link href="/jobopening">
+          <Link href="/jobopening" onClick={() => setMenuOpen(false)}>
             <div className=" cursor-pointer mt-4 p-2 bg-blue-900 hover:bg-blue-950 rounded-lg text-white text-center " >JOB OPENING</div>
           </Link>
         </ul>

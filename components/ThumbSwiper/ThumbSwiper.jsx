@@ -43,7 +43,7 @@ const ThumbSwiper = ({ planData }) => {
                     <SwiperSlide key={index}>
                         <div
                             onClick={() => setActiveIndex(index)}
-                            className={`relative p-4  font-bold flex flex-col items-center cursor-pointer  ${activeIndex === index
+                            className={`relative p-4 font-bold flex flex-col items-center cursor-pointer  ${activeIndex === index
                                 ? "bg-blue-950 scale-105 text-white"
                                 : "bg-gray-100 text-blue-950 md:border-x-1"
                                 }`}

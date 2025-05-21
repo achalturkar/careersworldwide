@@ -5,6 +5,7 @@ import WhyChooseCard from "@/components/WhyChooseCard/WhyChooseCard";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 import Image from "next/image";
 import ImageComponent from "@/components/ImageComponent/ImageComponent";
+import { FaLinkedin } from "react-icons/fa";
 
 const About = () => {
 
@@ -55,7 +56,8 @@ const About = () => {
     {
       img: "/ii.jpeg",
       name: "Prasanna Yadav",
-      designation: "Founder"
+      designation: "Founder",
+      linkedin : "https://www.linkedin.com/in/prasanna-yadav-16723b72/"
     }
   ]
 
@@ -129,7 +131,7 @@ comprehensive database has qualified applicants which enable you to recruit the 
 
       <section className="flex flex-col px-2 md:px-20  gap-3 md:gap-4 my-4 md:my-20">
 
-        <div className=" flext flex-col justify-center items-center">
+        <div className=" flext flex-col justify-center items-center" data-aos="fade-right">
           <h1 className="text-3xl font-bold text-blue-950 ">Meet Our Team</h1>
           <HandleMove className="items-center" />
         </div>
@@ -145,7 +147,7 @@ comprehensive database has qualified applicants which enable you to recruit the 
       {/* why choose this service  */}
       <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-16">
 
-        <div className=" flext flex-col justify-center items-center">
+        <div className=" flext flex-col justify-center items-center" data-aos="fade-right">
           <h1 className="text-3xl font-bold text-blue-950 ">Why Choose Us?</h1>
           <HandleMove className="items-center" />
         </div>

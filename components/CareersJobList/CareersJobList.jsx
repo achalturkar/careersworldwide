@@ -4,7 +4,7 @@ const CareersJobList = ({ Jobs }) => {
     return (
         <div className="flex flex-col gap-6 p-6">
             {Jobs.map((each, index) => (
-                <div key={index} className="flex flex-col md:flex-row justify-between items-start bg-white shadow-lg rounded-lg p-6">
+                <div key={index} className="flex flex-col md:flex-row justify-between items-start bg-white shadow-lg rounded-lg p-6" data-aos="fade-up">
                     {/* Left Section */}
                     <div className="w-full md:w-4/5">
                         <h2 className="text-xl font-bold text-blue-900 mb-2">{each.title}</h2>

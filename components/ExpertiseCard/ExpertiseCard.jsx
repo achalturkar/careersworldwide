@@ -4,7 +4,7 @@ const ExpertiseCard = ({ Expertise }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-2 md:p-12">
       {Expertise.map((each, index) => (
-        <div key={index} className="p-4 rounded-lg shadow-sm bg-orange-50 hover:bg-white hover:shadow-lg">
+        <div key={index} className="p-4 rounded-lg shadow-sm bg-orange-50 hover:bg-white hover:shadow-lg"  data-aos="fade-up">
           <div className="mb-2">
             <h1 className="text-2xl font-bold text-blue-950">{each.head}</h1>
           </div>

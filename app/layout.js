@@ -1,3 +1,9 @@
+'use client';
+
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+import { useEffect } from 'react';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
@@ -34,26 +40,24 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Careers Worldwide - Pune",
-  description: "Recruitment Company",
-};
+
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 800,
+      once: true,
+    });
+  }, []);
+
   return (
     <html lang="en">
-      <body
-        className={`${poppins.variable} ${montserrat.variable} antialiased`}
-      >
-
+      <body className={`${poppins.variable} ${montserrat.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />
         <TopUpButton />
-
-        <script>
-          AOS.init();
-        </script>
       </body>
     </html>
   );

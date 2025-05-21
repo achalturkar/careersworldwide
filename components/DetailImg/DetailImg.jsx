@@ -49,7 +49,7 @@ const DetailImg = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center p-3 md:p-12 mx-4 md:mx-32 gap-8  md:gap-16">
 
-            <div>
+            <div  data-aos="fade-right">
                 <Image
                     src="/m.jpg"
                     width={300}
@@ -61,15 +61,15 @@ const DetailImg = () => {
             </div>
 
             <div>
-                <div className="">
+                <div className=""  data-aos="fade-up">
                     <h1 className="text-2xl md:text-4xl font-black text-blue-950 ">Driven by Excellence, Powered by Expertise</h1>
                     <HandleMove />
                     <p className=" ">Our core strengths fuel smart hiring decisions and long-term success.</p>
                     
                 </div>
 
-                <div>
-                    <ul className="pl-8 text-md font-semibold leading-4 mt-4 ">
+                <div >
+                    <ul className="pl-8 text-md font-semibold leading-4 mt-4 "  data-aos="fade-right">
                        
                        {
                         competencies.map((each)=>(

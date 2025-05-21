@@ -6,9 +6,9 @@ const NumberCounter = () => {
     return (
         <section className="bg-[url('/c1.svg')] text-white p-16 bg-cover bg-no-repeat ">
 
-            <div className="grid grid-cols-1 md:grid-cols-5  md:px-28 flex items-center space-y-4 ">
+            <div className=" flex flex-col md:flex-row md:px-12  lg:px-28 justify-around items-center flex-wrap space-y-4  ">
 
-                <div className="flex flex-col justify-center items-center gap-2 ">
+                <div className="flex flex-col justify-center items-center gap-2 "data-aos="fade-up">
                     <p className="text-3xl font-bold ">
                         <CountUp
                             start={0}
@@ -23,11 +23,11 @@ const NumberCounter = () => {
                     <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Years Of Experience</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-2">
+                <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-up">
                     <p className="text-3xl font-bold ">
                         <CountUp
                             start={0}
-                            end={130}
+                            end={120}
                             enableScrollSpy={true}
                             scrollSpyOnce="true "
                             suffix="+"
@@ -38,11 +38,11 @@ const NumberCounter = () => {
                     <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Clients Served </p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-2">
+                <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-up">
                     <p className="text-3xl font-bold ">
                         <CountUp
                             start={0}
-                            end={1300}
+                            end={900}
                             enableScrollSpy={true}
                             scrollSpyOnce="true "
                             suffix="+"
@@ -53,7 +53,7 @@ const NumberCounter = () => {
                     <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Team Integration </p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-2">
+                <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-up">
                     <p className="text-3xl font-bold ">
                         <CountUp
                             start={0}
@@ -68,7 +68,7 @@ const NumberCounter = () => {
                     <div className="border border-2 bg-orange-500 w-24 "></div>
                     <p className="text-xl font-bold ">Team Members</p>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-2">
+                <div className="flex flex-col justify-center items-center gap-2" data-aos="fade-up">
                     <p className="text-3xl font-bold ">
                         <CountUp
                             start={0}

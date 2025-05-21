@@ -8,7 +8,7 @@ const ImageComponent = ({ Profile }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mx-4 md:mx-40   ">
       {Profile.map((each, index) => (
-        <div key={index} className="flex flex-col justify-center items-center ">
+        <div key={index} className="flex flex-col justify-center items-center " data-aos="fade-up">
           <Image
             src={each.img}
             alt={each.name}

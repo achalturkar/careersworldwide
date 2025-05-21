@@ -8,7 +8,7 @@ const Steps = ({ Content }) => {
 
             {
                 Content.map((each) => (
-                        <div key={each.step} className="w-full flex justify-center items-center flex-col md:flex-row p-2 md:p-4 gap-1 md:gap-12 h-full  shadow-md hover:shadow-lg hover:bg-white rounded-2xl my-2 ">
+                        <div key={each.step} className="w-full flex justify-center items-center flex-col md:flex-row p-2 md:p-4 gap-1 md:gap-12 h-full  shadow-md hover:shadow-lg hover:bg-white rounded-2xl my-2 "  data-aos="fade-up">
                             <div className="flex flex-col justify-center items-center gap-1 md:gap-2 ">
                                 <h1 className="text-center text-white text-xl font-bold bg-blue-950 p-4 h-6 w-6 rounded-full flex justify-center items-center h-1/4 ">  {each.step} </h1>
                                 <h1 className="text-xl font-bold ">Step</h1>
