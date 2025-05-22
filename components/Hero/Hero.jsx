@@ -15,9 +15,9 @@ const Hero = () => {
         <p className="font-medium text-lg text-gray-700 leading-tight">
           Our recruitment solutions connect you with the right people—fast, efficient, and tailored to your needs.
         </p>
-        <Link href="/jobopening">
+        <Link href="/partnerwithus">
           <button className="px-6 py-3 bg-blue-900 hover:bg-blue-950 transition-all rounded-xl text-white font-bold text-lg">
-            JOB OPENING
+            Partner With Us
           </button>
         </Link>
       </div>

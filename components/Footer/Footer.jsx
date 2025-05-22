@@ -56,7 +56,6 @@ const Footer = () => {
               <li><Link href="/about" className="hover:text-orange-400">About Us</Link></li>
               <li><Link href="/howwework" className="hover:text-orange-400">How We Work</Link></li>
               <li><Link href="/expertise" className="hover:text-orange-400">Expertise</Link></li>
-              <li><Link href="/contact" className="hover:text-orange-400">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -79,8 +78,19 @@ const Footer = () => {
               <li><Link href="/jobopening" className="hover:text-orange-400">Job Openings</Link></li>
             </ul>
           </div>
+
+          {/* Contact */}
+          <div className="mb-6 md:mb-2" data-aos="fade-up">
+            <h3 className="text-lg font-bold mb-2 text-white">Contact</h3>
+            <ul className="space-y-2">
+              <li><Link href="/contact" className="hover:text-orange-400">Contact us</Link></li>
+              <li><Link href="/partnerwithus" className="hover:text-orange-400">Partner With Us</Link></li>
+            </ul>
+          </div>
         </div>
       </div>
+
+      
 
       {/* Social Media & Copyright */}
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 pt-8 border-t border-slate-700">
