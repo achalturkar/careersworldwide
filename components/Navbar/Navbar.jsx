@@ -88,7 +88,7 @@ const Navbar = () => {
       {/* Mobile menu */}
       <div className={`lg:hidden  fixed top-0 right-0 h-full  bg-[url('/blob.svg')] object-cover bg-no-repeat text-black p-4 transform transition-transform duration-300 z-40 ${menuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex justify-between items-center mb-4">
-          <Image src="/cww.svg" width={150} height={150} alt="Logo" className="ml-12" />
+          <Image src="/cww.svg" width={150} height={150} alt="Logo" className="ml-6" />
           <FiX className="text-2xl cursor-pointer" onClick={() => setMenuOpen(false)} />
         </div>
 
