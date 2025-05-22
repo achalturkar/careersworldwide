@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Hero Description */}
       <div
         className="w-full md:w-1/2 flex flex-col justify-center items-center gap-3 md:items-start md:gap-6 text-center md:text-left"
-        data-aos="fade-right"
+        data-aos="fade-up"
       >
         <h1 className="font-black text-2xl md:text-4xl lg:text-5xl leading-tight">
           Unlocking Your Business's Potential Through Talent Acquisition
@@ -23,7 +23,7 @@ const Hero = () => {
       </div>
 
       {/* Hero Image */}
-      <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center items-center"  data-aos="fade-left">
+      <div className="w-full md:w-1/2 mt-8 md:mt-0 flex justify-center items-center"  data-aos="fade-up">
         <div className="relative w-[340px] h-[340px] sm:w-[350px] sm:h-[350px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px]">
           <Image
             src="/hero.png"
