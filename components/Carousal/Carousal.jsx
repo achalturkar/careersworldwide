@@ -16,7 +16,7 @@ const Carousal = ({ Hero }) => {
         transitionTime={800}
         swipeable={true}
         emulateTouch
-        showArrows={true}
+        showArrows={false}
       >
         {Hero.map((each, i) => (
           <div key={i} className="relative w-full h-[100vh] touch-pan-y">
