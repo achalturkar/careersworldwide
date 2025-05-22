@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { IoCall } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -10,14 +10,32 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false)
+  const [showTopBar, setShowTopBar] = useState(true);
+
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      setShowTopBar(currentScrollY < 50 || currentScrollY < lastScrollY);
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
 
   return (
-    
+
 
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-blue-900 to-orange-500">
       {/* Top contact bar */}
-      <div className="text-white flex justify-end gap-3 px-2  py-1 md:gap-6 px-4 text-xs md:text-sm">
+      <div className={`transition-all duration-300 ${showTopBar ? "opacity-100" : "opacity-0 h-0 overflow-hidden"} text-white flex justify-end gap-3 px-2 py-1 md:gap-6 px-4 text-xs md:text-sm`}>
         <div className="flex items-center gap-2">
           <IoCall className="size-4" />
           <p>9850041780</p>
@@ -42,7 +60,7 @@ const Navbar = () => {
 
           <li className="relative group cursor-pointer">
             <div className="flex items-center gap-1 hover:text-blue-900" onClick={() => setServicesOpen(!servicesOpen)}>
-              SERVICES 
+              SERVICES
             </div>
             {/* Dropdown */}
             <ul className="absolute top-6 left-var(40%) bg-white shadow-md rounded-md text-md w-68 hidden group-hover:block z-10">

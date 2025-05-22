@@ -12,10 +12,29 @@ import SliderLogo from "@/components/SliderLogo/SliderLogo";
 import ContactButton from "@/components/ContactButton/ContactButton";
 import { FaLightbulb } from "react-icons/fa";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
+import Carousal from "@/components/Carousal/Carousal";
 
 
 
 export default function Home() {
+
+  const hero =[
+    {
+      img: "/hh.webp",
+      head: "empowering ",
+      subhead: "kdnsknmeks"
+    },
+    {
+      img: "/h2.webp",
+      head: "empowering kdm ",
+      subhead: "kdnsknmeks nv"
+    },
+    {
+      img: "/h3.webp",
+      head: "empowea tlent ring ",
+      subhead: "kdnsknmeks dn"
+    },
+  ]
 
   const service = [
     {
@@ -127,6 +146,9 @@ export default function Home() {
 
   return (
     <main>
+
+
+      <Carousal Hero={hero}/>
 
       {/* Hero section */}
       <Hero />
