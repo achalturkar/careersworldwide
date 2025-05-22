@@ -19,7 +19,7 @@ const Carousal = ({Hero}) => {
         showArrows={true}
       >
         {Hero.map((each, i) => (
-          <div key={i} className="relative w-full h-[100vh]">
+          <div key={i} className="relative w-full h-[100vh] touch-pan-y">
             <Image
               src={each.img}
               alt={`Slide ${i}`}
