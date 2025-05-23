@@ -148,7 +148,7 @@ export default function Home() {
     <main>
 
 
-      <Carousal Hero={hero}/>
+      {/* <Carousal Hero={hero}/> */}
 
       {/* Hero section */}
       <Hero />
