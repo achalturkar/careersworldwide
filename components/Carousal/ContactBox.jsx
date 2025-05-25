@@ -32,10 +32,10 @@ const ContactBox = () => {
 
     return (
 
-        <div className="">
+        <div className="px-2">
             {
                 contact.map((each, index) => (
-                    <div key={index} className="flex justify-start items-center gap-6 my-8 hover:shadow-sm p-2 rounded-lg">
+                    <div key={index} className="flex justify-start items-center gap-3  md:gap-6 my-4 md:my-8 hover:shadow-sm p-2 rounded-lg">
 
                         <div className="text-white p-3 bg-blue-950 rounded-full">
                             {each.icon}

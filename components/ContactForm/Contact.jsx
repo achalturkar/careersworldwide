@@ -47,7 +47,7 @@ const ContactForm = () => {
             <div className=" bg-white/60 p-6 md:px-60 w-full">
                 <div className="flex flex-col md:flex-row justify-center items-center gap-6">
                     {/* Contact Info */}
-                    <div className=" space-y-6 flex-1">
+                    <div className=" space-y-4 flex-1">
                         <div className="flex flex-col justify-center items-center">
                             <h2 className="text-4xl font-extrabold text-blue-950">
                                 Get in Touch
