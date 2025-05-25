@@ -3,6 +3,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import Image from 'next/image';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Link from 'next/link';
 
 const Carousal = ({ Hero }) => {
   return (
@@ -30,9 +31,15 @@ const Carousal = ({ Hero }) => {
             />
 
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-center items-center text-white text-center p-4">
-              <h1 className="text-3xl md:text-5xl font-bold">{each.head}</h1>
-              <p className="text-sm md:text-lg mt-2 max-w-xl">{each.subhead}</p>
+            <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-center items-center md:justify-start md:items-start text-white  p-4 mt-2m">
+              <h1 className="font-black text-2xl md:text-4xl lg:text-5xl leading-tight">{each.head}</h1>
+              <p className="font-medium text-lg text-gray-700 leading-tigh">{each.subhead}</p>
+              <Link href="/partnerwithus">
+                <button className="px-6 py-3 bg-blue-900 hover:bg-blue-950 transition-all rounded-xl text-white font-bold text-lg">
+                  Partner With Us
+                </button>
+              </Link>
+
             </div>
           </div>
         ))}

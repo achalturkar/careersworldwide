@@ -10,7 +10,7 @@ import {
     FaInstagram,
 } from "react-icons/fa";
 import HandleMove from "../HandleMove/HandleMove";
-import ContactBox from "../Carousal/ContactBox";
+import ContactBox from "../ContactBox/ContactBox";
 
 const ContactForm = () => {
     const [form, setForm] = useState({

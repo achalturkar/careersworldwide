@@ -21,19 +21,19 @@ export default function Home() {
   const hero =[
     {
       img: "/hh.webp",
-      head: "empowering ",
-      subhead: "kdnsknmeks"
+      head: "Unlocking Your Business's Potential Through Talent Acquisition ",
+      subhead: "Our recruitment solutions connect you with the right people—fast, efficient, and tailored to your needs"
     },
-    {
-      img: "/h2.webp",
-      head: "empowering kdm ",
-      subhead: "kdnsknmeks nv"
-    },
-    {
-      img: "/h3.webp",
-      head: "empowea tlent ring ",
-      subhead: "kdnsknmeks dn"
-    },
+    // {
+    //   img: "/h2.webp",
+    //   head: "empowering kdm ",
+    //   subhead: "kdnsknmeks nv"
+    // },
+    // {
+    //   img: "/h3.webp",
+    //   head: "empowea tlent ring ",
+    //   subhead: "kdnsknmeks dn"
+    // },
   ]
 
   const service = [

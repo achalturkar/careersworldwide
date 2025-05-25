@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="min-h-[92vh] md:min-h-[70vh] lg:min-h-[92vh] max-h-[92vh] pt-28 bg-white w-full flex flex-col px-4 py-8  md:gap-2 md:flex-row md:items-center md:px-8 lg:px-16 lg-py-20">
+    <div className="min-h-[110vh] md:min-h-[70vh] lg:min-h-[92vh] max-h-[92vh] pt-28 bg-white w-full flex flex-col px-4 pt-8  md:gap-2 md:flex-row md:items-center md:px-8 lg:px-16 lg-py-20">
       {/* Hero Description */}
       <div
         className="w-full md:w-1/2 flex flex-col justify-center items-center gap-3 md:items-start md:gap-6 text-center md:text-left"
