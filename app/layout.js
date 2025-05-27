@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import { Poppins, Roboto, Montserrat } from 'next/font/google';
 import Footer from "@/components/Footer/Footer";
 import TopUpButton from "@/components/TopUpButton/TopUpButton";
+import Head from 'next/head';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -53,6 +54,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={`${poppins.variable} ${montserrat.variable} antialiased`}>
         <Navbar />
         {children}

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// lassName="flex flex-col md:flex-row min-h-screen w-full bg-gradient-to-br bg-gray-100 text-black mt-16"
 
 const Hero = () => {
   return (

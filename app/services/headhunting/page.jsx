@@ -3,7 +3,7 @@ import HandleMove from "@/components/HandleMove/HandleMove";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 import WhyChooseCard from "@/components/WhyChooseCard/WhyChooseCard";
-
+import Head from "next/head";
 
 const HeadHunting = () => {
 
@@ -50,42 +50,75 @@ const HeadHunting = () => {
 
 
     return (
-        <main>
+        <>
 
-            {/* HeroSection for define service Heading */}
-            <HeroSection title="Head Hunting" subtitle="We don’t just fill positions — we find leaders who drive success" />
+            <Head>
+                <title>Head Hunting Services | Careers Worldwide</title>
+                <meta
+                    name="description"
+                    content="At Careers Worldwide, our approach to recruitment focuses on precision and personalization. We specialize in connecting companies with top-tier talent that’s not actively seeking job opportunities — the kind of professionals who are already making an impact but are open to the right move. We engage these passive candidates through strategic research, direct communication, and a deep understanding of your business needs."
+                />
+                <meta
+                    name="keywords"
+                    content="head hunting, executive search, talent acquisition, specialized recruitment, Careers Worldwide"
+                />
+                <meta name="author" content="Careers Worldwide" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://careersworldwide.in/services/headhunting" />
 
-            {/* describe service */}
-            <ServiceDetail img="/hhs.webp" head="Specialists in Finding Exceptional People"
-                desc="We don't deal only in filling senior positions as the head hunter defines itself.We cater to our client needs wherein the position is called 'hard-to-fill vacancy' at any level.Capturing the
+                {/* Open Graph */}
+                <meta property="og:title" content="Head Hunting Services | Careers Worldwide" />
+                <meta property="og:description" content="Find top executives and specialized talent with Careers Worldwide’s expert head hunting services." />
+                <meta property="og:url" content="https://careersworldwide.in/services/headhunting" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://careersworldwide.in/images/hhs.webp" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Head Hunting Services | Careers Worldwide" />
+                <meta name="twitter:description" content="Partner with Careers Worldwide for specialized head hunting and executive search solutions." />
+                <meta name="twitter:image" content="https://careersworldwide.in/images/hhs.webp" />
+
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
+
+            <main>
+
+                {/* HeroSection for define service Heading */}
+                <HeroSection title="Head Hunting" subtitle="We don’t just fill positions — we find leaders who drive success" />
+
+                {/* describe service */}
+                <ServiceDetail img="/hhs.webp" head="Specialists in Finding Exceptional People"
+                    desc="We don't deal only in filling senior positions as the head hunter defines itself.We cater to our client needs wherein the position is called 'hard-to-fill vacancy' at any level.Capturing the
              attention of the high-calibre candidates one requires a smarter way of hunting. That's where our headhunting comes into play."
-                desc2="At Careers Worldwide, our approach to recruitment focuses on precision and personalization. We specialize in connecting companies with top-tier talent that’s not actively seeking job opportunities — the kind of professionals who are already making an impact but are open 
+                    desc2="At Careers Worldwide, our approach to recruitment focuses on precision and personalization. We specialize in connecting companies with top-tier talent that’s not actively seeking job opportunities — the kind of professionals who are already making an impact but are open 
                to the right move. We engage these passive candidates through strategic research, direct communication, and a deep understanding of your business needs."
-            />
+                />
 
-            {/* why choose this service  */}
-            <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-20">
+                {/* why choose this service  */}
+                <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-20">
 
-                <div className=" flext flex-col justify-center items-center">
-                    <h1 className="text-3xl font-bold text-blue-950 ">Why Choose Us?</h1>
-                    <HandleMove className="items-center" />
-                </div>
+                    <div className=" flext flex-col justify-center items-center">
+                        <h1 className="text-3xl font-bold text-blue-950 ">Why Choose Us?</h1>
+                        <HandleMove className="items-center" />
+                    </div>
 
-                <div>
-                    <WhyChooseCard Choose={content} />
-                </div>
-            </section>
+                    <div>
+                        <WhyChooseCard Choose={content} />
+                    </div>
+                </section>
 
-            {/* contact button  */}
-            <ContactButton />
+                {/* contact button  */}
+                <ContactButton />
 
-        </main>
+            </main>
+
+        </>
+
     )
 }
 
-export const metadata = {
-  title: "Head Hunting - CWW",
-  description: "Recruitment Company",
-};
+
 
 export default HeadHunting;

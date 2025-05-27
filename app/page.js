@@ -13,12 +13,15 @@ import ContactButton from "@/components/ContactButton/ContactButton";
 import { FaLightbulb } from "react-icons/fa";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 import Carousal from "@/components/Carousal/Carousal";
+import dynamic from 'next/dynamic'
+
+import Head from 'next/head';
 
 
 
 export default function Home() {
 
-  const hero =[
+  const hero = [
     {
       img: "/hh.webp",
       head: "Unlocking Your Business's Potential Through Talent Acquisition ",
@@ -42,7 +45,7 @@ export default function Home() {
       head: "Head Hunting",
       desc: "We don't deal only in filling senior positions as the head hunter defines itself.We cater to our client needs wherein the position is called hard-to-fill vacancy at any level...",
       link: "/services/headhunting",
-      icon:<FaUserTie />,
+      icon: <FaUserTie />,
 
 
     },
@@ -145,85 +148,122 @@ export default function Home() {
 
 
   return (
-    <main>
 
+    <>
 
-      {/* <Carousal Hero={hero}/> */}
-
-      {/* Hero section */}
-      <Hero />
-
-      {/* Number Achieve Section */}
-      <NumberCounter />
-
-
-          {/* about company section  */}
-      <section>
-        <ServiceDetail img="/hh.webp" head="Who We Are?"
-          desc="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people"
-          desc2="We combine global reach with local expertise, offering end-to-end staffing solutions tailored to each client’s needs. Whether you're hiring for a niche role or scaling rapidly, Careers Worldwide delivers talent that fits"
-        
-        
+      <Head>
+        {/* Basic Meta Tags */}
+        <title>Careers Worldwide - Pune</title>
+        <meta
+          name="description"
+          content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people."
         />
-      </section>
+        <meta name="keywords" content="careersworldwide, careers, jobs, recruitment, hiring, employment, global jobs, IT jobs, head huntings, contractual recruitment, payroll, permanent recruitment" />
+        <meta name="author" content="Careers Worldwide" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://careersworldwide.in/" />
 
-      {/* Services display Section */}
-      <section className="flex flex-col p-4 md:p-8">
-        <div className="leading-tight" data-aos="fade-right">
-          <h3 className="text-lg font-semibold text-blue-900" >What We Offers</h3>
-          <div className="border w-36 my-1"></div>
-          <div className="flex justify-start items-center ">
-            <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Services </h1>
-            <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+        {/* Open Graph (Facebook, LinkedIn) */}
+        <meta property="og:title" content="Careers Worldwide - Pune" />
+        <meta property="og:description" content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management." />
+        <meta property="og:url" content="https://careersworldwide.in/" />
+        <meta property="og:site_name" content="Careers Worldwide" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://careersworldwide.in/images/hh.webp" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers Worldwide - Pune" />
+        <meta name="twitter:description" content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management." />
+        <meta name="twitter:image" content="https://careersworldwide.in/images/hh.webp" />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+
+        {/* Mobile Responsive */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
+
+      <main>
+
+
+        {/* <Carousal Hero={hero}/> */}
+
+        {/* Hero section */}
+        <Hero />
+
+        {/* Number Achieve Section */}
+        <NumberCounter />
+
+
+        {/* about company section  */}
+        <section>
+          <ServiceDetail img="/hh.webp" head="Who We Are?"
+            desc="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people"
+            desc2="We combine global reach with local expertise, offering end-to-end staffing solutions tailored to each client’s needs. Whether you're hiring for a niche role or scaling rapidly, Careers Worldwide delivers talent that fits"
+
+
+          />
+        </section>
+
+        {/* Services display Section */}
+        <section className="flex flex-col p-4 md:p-8">
+          <div className="leading-tight" data-aos="fade-right">
+            <h3 className="text-lg font-semibold text-blue-900" >What We Offers</h3>
+            <div className="border w-36 my-1"></div>
+            <div className="flex justify-start items-center ">
+              <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Services </h1>
+              <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+            </div>
           </div>
-        </div>
-        <Card Detail={service} />
-      </section>
+          <Card Detail={service} />
+        </section>
 
-      {/* Detail Expertise  Section */}
-      <section className="bg-[url('/polygon.svg')] bg-cover bg-no-repeat">
-        <DetailImg />
-      </section>
+        {/* Detail Expertise  Section */}
+        <section className="bg-[url('/polygon.svg')] bg-cover bg-no-repeat">
+          <DetailImg />
+        </section>
 
-      {/* logo slider */}
+        {/* logo slider */}
 
         <section className="flex flex-col p-4 md:p-8 ">
-        <div className="leading-tight" data-aos="fade-right">
-          <h3 className="text-lg font-semibold text-blue-900">Trusted By the Best</h3>
-          <div className="border w-46 my-1"></div>
-          <div className="flex justify-start items-center ">
-            <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Clients </h1>
-            <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+          <div className="leading-tight" data-aos="fade-right">
+            <h3 className="text-lg font-semibold text-blue-900">Trusted By the Best</h3>
+            <div className="border w-46 my-1"></div>
+            <div className="flex justify-start items-center ">
+              <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Clients </h1>
+              <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+            </div>
           </div>
-        </div>
-      <SliderLogo logo={logos} />
-      </section>
+          <SliderLogo logo={logos} />
+        </section>
 
-      {/* Foundation section Section */}
-      <section className="flex flex-col p-4 md:p-8 ">
-        <div className="leading-tight" data-aos="fade-right">
-          <h3 className="text-lg font-semibold text-blue-900">What Drive Us</h3>
-          <div className="border w-36 my-1"></div>
-          <div className="flex justify-start items-center mb-8">
-            <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Foundation </h1>
-            <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+        {/* Foundation section Section */}
+        <section className="flex flex-col p-4 md:p-8 ">
+          <div className="leading-tight" data-aos="fade-right">
+            <h3 className="text-lg font-semibold text-blue-900">What Drive Us</h3>
+            <div className="border w-36 my-1"></div>
+            <div className="flex justify-start items-center mb-8">
+              <h1 className="text-3xl text-orange-400 font-extrabold  ">Our Foundation </h1>
+              <MdDoubleArrow className="text-3xl text-orange-400 font-extrabold" />
+            </div>
           </div>
-        </div>
-        <ThumbSwiper planData={planData} />
-      </section>
+          <ThumbSwiper planData={planData} />
+        </section>
 
 
 
 
-      <ContactButton />
+        <ContactButton />
 
-    </main>
+      </main>
+
+    </>
+
   );
 
-  
+
 }
-export const metadata = {
-  title: "Careers Worldwide - Pune",
-  description: "Recruitment Company",
-};
+
 

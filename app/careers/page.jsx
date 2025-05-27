@@ -1,5 +1,6 @@
 import CareersJobList from "@/components/CareersJobList/CareersJobList";
 import HeroSection from "@/components/HeroSection/HeroSection";
+import Head from "next/head";
 
 
 const Careers = () => {
@@ -42,23 +43,52 @@ const Careers = () => {
 
   return (
 
-    <main>
 
-      <HeroSection title="Careers" subtitle="Join a Team Where Your Growth is Our Priority." img="/abc.jpg" />
+    <>
+      <Head>
+        <title>Careers | Careers Worldwide - Join Our Growing Team</title>
+        <meta
+          name="description"
+          content="Explore current job openings at Careers Worldwide. Join our team and be a part of a leading recruitment company delivering global hiring solutions."
+        />
+        <meta
+          name="keywords"
+          content="Careers Worldwide jobs, join our team, recruitment company hiring, HR careers, work at Careers Worldwide, job openings, it jobs "
+        />
+        <meta name="author" content="Careers Worldwide" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://careersworldwide.in/careers" />
+
+        {/* Open Graph (Facebook, LinkedIn, etc.) */}
+        <meta property="og:title" content="Careers | Careers Worldwide - Join Our Growing Team" />
+        <meta property="og:description" content="Check out exciting career opportunities with Careers Worldwide. Work with industry experts and build your future in recruitment and HR." />
+        <meta property="og:url" content="https://careersworldwide.in/careers" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Careers Worldwide" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Careers | Careers Worldwide - Join Our Growing Team" />
+        <meta name="twitter:description" content="We're hiring! Discover job opportunities at Careers Worldwide and grow with a top recruitment consultancy." />
+
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <main>
+
+        <HeroSection title="Careers" subtitle="Join a Team Where Your Growth is Our Priority." img="/abc.jpg" />
 
 
-      <CareersJobList Jobs={jobData} />
+        <CareersJobList Jobs={jobData} />
 
 
 
 
-    </main>
+      </main>
+
+    </>
   )
 }
 
-export const metadata = {
-  title: "Careers - CWW ",
-  description: "Recruitment Company",
-};
 
 export default Careers;

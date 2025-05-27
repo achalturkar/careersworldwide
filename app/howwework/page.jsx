@@ -2,6 +2,7 @@
 import ContactButton from "@/components/ContactButton/ContactButton";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import Steps from "@/components/Steps/Steps";
+import Head from "next/head";
 
 const HowWeWork = () => {
 
@@ -32,7 +33,7 @@ const HowWeWork = () => {
         },
         {
             step: 4,
-            head:"Screening & Evaluation",
+            head: "Screening & Evaluation",
             subhead: "Every candidate is carefully screened using competency-based interviews and behavioral assessments. ",
             desc1: "Resume shortlisting ",
             desc2: "Initial assessments ",
@@ -90,22 +91,55 @@ const HowWeWork = () => {
 
 
     return (
-        <main>
-            <HeroSection title="How We Work" subtitle="A transparent, structured, and proven approach to finding the right talent" />
+
+        <>
+
+            <Head>
+                <title>How We Work | Careers Worldwide - Transparent Hiring Process</title>
+                <meta
+                    name="description"
+                    content="Understand how Careers Worldwide operates — from talent sourcing to placement. We follow a transparent and efficient recruitment process."
+                />
+                <meta
+                    name="keywords"
+                    content="how we work, recruitment process, hiring workflow, Careers Worldwide hiring method, staffing process, recruitment steps"
+                />
+                <meta name="author" content="Careers Worldwide" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://careersworldwide.in/howwework" />
+
+                {/* Open Graph */}
+                <meta property="og:title" content="How We Work | Careers Worldwide - Transparent Hiring Process" />
+                <meta property="og:description" content="Explore our step-by-step hiring process and how we connect global talent with the right employers." />
+                <meta property="og:url" content="https://careersworldwide.in/howwework" />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Careers Worldwide" />
+
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="How We Work | Careers Worldwide - Transparent Hiring Process" />
+                <meta name="twitter:description" content="Learn how Careers Worldwide ensures smooth, professional recruitment for job seekers and employers." />
+
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
 
-            <Steps Content={content} />
+            <main>
+                <HeroSection title="How We Work" subtitle="A transparent, structured, and proven approach to finding the right talent" />
 
 
-            <ContactButton />
-   
-        </main>
+                <Steps Content={content} />
+
+
+                <ContactButton />
+
+            </main>
+
+        </>
+
     )
 }
 
-export const metadata = {
-  title: "How We Work - CWW",
-  description: "Recruitment Company",
-};
+
 
 export default HowWeWork;

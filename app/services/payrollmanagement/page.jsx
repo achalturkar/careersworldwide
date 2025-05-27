@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection/HeroSection";
 import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 import WhyChooseCard from "@/components/WhyChooseCard/WhyChooseCard";
 import HandleMove from "@/components/HandleMove/HandleMove";
-
+import Head from "next/head";
 
 const PayrollManagement = () => {
 
@@ -50,38 +50,73 @@ const PayrollManagement = () => {
 
 
     return (
-        <main>
-            {/* hero section define service  */}
-            <HeroSection title="Payroll Management" subtitle="Accurate Payroll, Simplified and Stress-Free" />
 
-            {/* describe service  */}
-            <ServiceDetail img="/pm.webp" head="Seamless Payroll Solutions Tailored to Your Business."
-                desc="Efficient payroll management is crucial for smooth business operations. At Careers Worldwide, we ensure your employees are paid accurately and on time, while keeping you compliant with all statutory regulations"
-                desc2="Our payroll management services handle everything from salary calculations and tax deductions to compliance reporting and timely disbursements. By partnering with us, you can focus on growing your business, while we take care of the complexities of payroll administration with precision and confidentiality" />
+        <>
 
-            {/* why choose section  */}
-            <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-20">
+            <Head>
+                <title>Payroll Management Services | Careers Worldwide</title>
+                <meta
+                    name="description"
+                    content="Careers Worldwide payroll management services handle everything from salary calculations and tax deductions to compliance reporting and timely disbursements. By partnering with us, you can focus on growing your business, while we take care of the complexities of payroll administration with precision and confidentiality"
+                />
+                <meta
+                    name="keywords"
+                    content="payroll management, payroll outsourcing, salary processing, tax compliance, payroll services, Careers Worldwide"
+                />
+                <meta name="author" content="Careers Worldwide" />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://careersworldwide.in/services/payrollmanagement" />
 
-                <div className=" flext flex-col justify-center items-center">
-                    <h1 className="text-3xl font-bold text-blue-950 ">Why Choose Us?</h1>
-                    <HandleMove className="items-center" />
-                </div>
+                {/* Open Graph (Facebook, LinkedIn) */}
+                <meta property="og:title" content="Payroll Management Services | Careers Worldwide" />
+                <meta property="og:description" content="Streamline payroll and ensure compliance with expert payroll outsourcing services from Careers Worldwide." />
+                <meta property="og:url" content="https://careersworldwide.in/services/payrollmanagement" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://careersworldwide.in/images/pm.webp" />
 
-                <div>
-                    <WhyChooseCard Choose={content} />
-                </div>
-            </section>
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Payroll Management Services | Careers Worldwide" />
+                <meta name="twitter:description" content="Careers Worldwide provides professional payroll management services for businesses of all sizes." />
+                <meta name="twitter:image" content="https://careersworldwide.in/images/pm.webp" />
 
-            {/* contact button  */}
-            <ContactButton />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-        </main>
+
+
+
+            <main>
+                {/* hero section define service  */}
+                <HeroSection title="Payroll Management" subtitle="Accurate Payroll, Simplified and Stress-Free" />
+
+                {/* describe service  */}
+                <ServiceDetail img="/pm.webp" head="Seamless Payroll Solutions Tailored to Your Business."
+                    desc="Efficient payroll management is crucial for smooth business operations. At Careers Worldwide, we ensure your employees are paid accurately and on time, while keeping you compliant with all statutory regulations"
+                    desc2="Our payroll management services handle everything from salary calculations and tax deductions to compliance reporting and timely disbursements. By partnering with us, you can focus on growing your business, while we take care of the complexities of payroll administration with precision and confidentiality" />
+
+                {/* why choose section  */}
+                <section className="flex flex-col px-2 md:px-20 justify-start items-start gap-3 md:gap-4 my-4 md:my-20">
+
+                    <div className=" flext flex-col justify-center items-center">
+                        <h1 className="text-3xl font-bold text-blue-950 ">Why Choose Us?</h1>
+                        <HandleMove className="items-center" />
+                    </div>
+
+                    <div>
+                        <WhyChooseCard Choose={content} />
+                    </div>
+                </section>
+
+                {/* contact button  */}
+                <ContactButton />
+
+            </main>
+
+        </>
     )
 }
 
-export const metadata = {
-  title: "Payroll Management - CWW",
-  description: "Recruitment Company",
-};
+
 
 export default PayrollManagement;
