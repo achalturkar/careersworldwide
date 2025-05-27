@@ -21,7 +21,7 @@ const ContactBox = () => {
 
         },
         {
-            head: "Address",
+            head: "Registered Office Address",
             detail: "Office No 5, 2nd floor, Siddhivinayak towers, Bibvewadi Road, Pune 411037, India",
             icon: <FaLocationDot size={28} />
 
