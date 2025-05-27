@@ -7,17 +7,17 @@ export async function GET() {
 
   const pages = [
     { path: "/", priority: "1.0", changefreq: "daily" },
+        { path: "/contact", priority: "0.9", changefreq: "monthly" },
     { path: "/job-openings", priority: "0.9", changefreq: "daily" },
     { path: "/partner-with-us", priority: "0.9", changefreq: "weekly" },
     { path: "/careers", priority: "0.8", changefreq: "weekly" },
-    { path: "/contact", priority: "0.8", changefreq: "monthly" },
     { path: "/about", priority: "0.7", changefreq: "monthly" },
-    { path: "/how-we-work", priority: "0.7", changefreq: "monthly" },
+    { path: "/howwework", priority: "0.7", changefreq: "monthly" },
     { path: "/expertise", priority: "0.7", changefreq: "monthly" },
-    { path: "/contractual-recruitment", priority: "0.6", changefreq: "monthly" },
-    { path: "/head-hunting", priority: "0.6", changefreq: "monthly" },
-    { path: "/payroll-management", priority: "0.6", changefreq: "monthly" },
-    { path: "/permanent-role", priority: "0.6", changefreq: "monthly" },
+    { path: "/services/contractualrecruitment", priority: "0.6", changefreq: "monthly" },
+    { path: "/services/headhunting", priority: "0.6", changefreq: "monthly" },
+    { path: "/services/payrollmanagement", priority: "0.6", changefreq: "monthly" },
+    { path: "/services/permanentrecruitment", priority: "0.6", changefreq: "monthly" },
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
