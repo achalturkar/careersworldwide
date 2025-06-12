@@ -117,9 +117,6 @@ export default function Home() {
       img: "/logo/jdg.jpg"
     },
     {
-      img: "/logo/ast.svg"
-    },
-    {
       img: "/logo/es.png"
     },
     {
