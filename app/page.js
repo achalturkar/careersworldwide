@@ -155,7 +155,7 @@ export default function Home() {
           name="description"
           content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people."
         />
-        <meta name="keywords" content="careersworldwide, careers, jobs, recruitment, hiring, employment, global jobs, IT jobs, head huntings, contractual recruitment, payroll, permanent recruitment" />
+        <meta name="keywords" content="careersworldwide, careers, jobs, Openings, recruitment, hiring, employment, global jobs, IT jobs, head huntings, contractual recruitment, payroll, permanent recruitment" />
         <meta name="author" content="Careers Worldwide" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://careersworldwide.in/" />
