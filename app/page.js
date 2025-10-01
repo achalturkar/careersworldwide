@@ -21,23 +21,6 @@ import Head from 'next/head';
 
 export default function Home() {
 
-  const hero = [
-    {
-      img: "/hh.webp",
-      head: "Unlocking Your Business's Potential Through Talent Acquisition ",
-      subhead: "Our recruitment solutions connect you with the right people—fast, efficient, and tailored to your needs"
-    },
-    // {
-    //   img: "/h2.webp",
-    //   head: "empowering kdm ",
-    //   subhead: "kdnsknmeks nv"
-    // },
-    // {
-    //   img: "/h3.webp",
-    //   head: "empowea tlent ring ",
-    //   subhead: "kdnsknmeks dn"
-    // },
-  ]
 
   const service = [
     {
@@ -150,7 +133,7 @@ export default function Home() {
 
       <Head>
         {/* Basic Meta Tags */}
-        <title>Careers Worldwide - Pune</title>
+        <title>Careers Worldwide</title>
         <meta
           name="description"
           content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people."
@@ -160,20 +143,9 @@ export default function Home() {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://careersworldwide.in/" />
 
-        {/* Open Graph (Facebook, LinkedIn) */}
-        <meta property="og:title" content="Careers Worldwide - Pune" />
-        <meta property="og:description" content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management." />
-        <meta property="og:url" content="https://careersworldwide.in/" />
-        <meta property="og:site_name" content="Careers Worldwide" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://careersworldwide.in/images/hh.webp" />
+       
 
-        {/* Twitter Card */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Careers Worldwide - Pune" />
-        <meta name="twitter:description" content="Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management." />
-        <meta name="twitter:image" content="https://careersworldwide.in/images/hh.webp" />
-
+       
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" />
 
@@ -248,9 +220,6 @@ export default function Home() {
           </div>
           <ThumbSwiper planData={planData} />
         </section>
-
-
-
 
         <ContactButton />
 

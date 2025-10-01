@@ -62,15 +62,10 @@ const About = () => {
     }
   ]
 
-
-
-  return (
-
-
+ return (
     <>
-
       <Head>
-        <title>About Us | Careers Worldwide - Global Recruitment Experts</title>
+        <title>About Us - Careers Worldwide</title>
         <meta
           name="description"
           content="Careers Worldwide is complete Human Resources, Manpower & Training solution provider with offices in India and UK. We have established our operations in year 2010 and since have been working with many esteemed organizations and brands as successful recruitment partners. Our professional team is offering every possible assistance at every stage of operations in recruitment, training, and consultancy."
@@ -83,23 +78,9 @@ const About = () => {
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://careersworldwide.in/about" />
 
-        {/* Open Graph (for Facebook, LinkedIn) */}
-        <meta property="og:title" content="About Us | Careers Worldwide - Global Recruitment Experts" />
-        <meta property="og:description" content="Careers Worldwide is complete Human Resources, Manpower & Training solution provider with offices in India and UK. We have established our operations in year 2010 and since have been working with many esteemed organizations and brands as successful recruitment partners." />
-        <meta property="og:url" content="https://careersworldwide.in/about" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://careersworldwide.in/images/abouts.webp" />
-        <meta property="og:site_name" content="Careers Worldwide" />
-
-        {/* Twitter Cards */}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About Us | Careers Worldwide - Global Recruitment Experts" />
-        <meta name="twitter:description" content="Get to know Careers Worldwide, a recruitment agency helping professionals and businesses grow across continents." />
-        <meta name="twitter:image" content="https://careersworldwide.in/images/about-twitter.jpg" />
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
 
       <main className="mt-26">
 
@@ -203,6 +184,8 @@ comprehensive database has qualified applicants which enable you to recruit the 
 
 
 }
-
+export const metadata = {
+  title: 'About - Careers Worldwide', 
+};
 
 export default About;

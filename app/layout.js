@@ -1,3 +1,14 @@
+export const metadata = {
+  title: 'Careers Worldwide Pune ', 
+  description: 'Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people.',
+  openGraph: {
+    title: 'Careers Worldwide Pune',
+    siteName: 'Careers Worldwide', 
+    url: 'https://www.careersworldwide.in/',
+    type: 'website',
+  },
+};
+
 'use client';
 
 import 'aos/dist/aos.css';
@@ -11,6 +22,9 @@ import { Poppins, Roboto, Montserrat } from 'next/font/google';
 import Footer from "@/components/Footer/Footer";
 import TopUpButton from "@/components/TopUpButton/TopUpButton";
 import Head from 'next/head';
+
+
+
 
 const poppins = Poppins({
   subsets: ['latin'],
