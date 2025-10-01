@@ -1,3 +1,6 @@
+// 'use client';
+
+
 export const metadata = {
   title: 'Careers Worldwide Pune ', 
   description: 'Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management. Trusted by over 60+ enterprise clients, our technology-backed approach helps businesses scale with the right people.',
@@ -9,11 +12,10 @@ export const metadata = {
   },
 };
 
-'use client';
 
-import 'aos/dist/aos.css';
-import AOS from 'aos';
-import { useEffect } from 'react';
+// import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import { useEffect } from 'react';
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -22,6 +24,7 @@ import { Poppins, Roboto, Montserrat } from 'next/font/google';
 import Footer from "@/components/Footer/Footer";
 import TopUpButton from "@/components/TopUpButton/TopUpButton";
 import Head from 'next/head';
+import AOSWrapper from "./AOSWrapper";
 
 
 
@@ -57,14 +60,14 @@ const geistMono = Geist_Mono({
 
 
 
-export default function RootLayout({ children }) {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 800,
-      once: true,
-    });
-  }, []);
+ export default function RootLayout({ children }) {
+//   useEffect(() => {
+//     AOS.init({
+//       offset: 100,
+//       duration: 800,
+//       once: true,
+//     });
+//   }, []);
 
   return (
     <html lang="en">
@@ -75,10 +78,12 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body className={`${poppins.variable} ${montserrat.variable} antialiased`}>
+        <AOSWrapper>
         <Navbar />
         {children}
         <Footer />
         <TopUpButton />
+        </AOSWrapper>
       </body>
     </html>
   );
