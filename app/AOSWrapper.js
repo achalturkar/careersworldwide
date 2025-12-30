@@ -1,6 +1,4 @@
-// app/AOSWrapper.js
-
-'use client'; // <-- This must be here
+'use client'; 
 
 import 'aos/dist/aos.css';
 import AOS from 'aos';

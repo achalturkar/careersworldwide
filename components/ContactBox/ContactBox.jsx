@@ -10,7 +10,7 @@ const ContactBox = () => {
     const contact = [
         {
             head: "Phone",
-            detail: "+91 9850041780/ 8767246552",
+            detail: "+91 9689003720/ 8767246552",
             icon: <FaPhoneAlt size={28}/>
 
         },

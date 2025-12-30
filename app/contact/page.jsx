@@ -24,7 +24,7 @@ const Contact = () => {
                 <meta
                     name="description"
                     content="Address Office No 5, 2nd floor, Siddhivinayak towers, Bibvewadi Road, Pune 411037, India Phone
-+91 9850041780/ 8767246552, Email recruitment@careersworldwide.in"
++91 9689003720/ 8767246552, Email recruitment@careersworldwide.in"
                 />
                 <meta
                     name="keywords"
