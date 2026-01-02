@@ -101,7 +101,7 @@ const Footer = () => {
           <Link href="#" className="hover:text-green-400"><FaWhatsapp /></Link>
         </div>
         <p className="text-sm text-center sm:text-left text-slate-400">
-          © 2025 Careers Worldwide. All rights reserved.
+          © {new Date().getFullYear()} Careers Worldwide. All rights reserved.
         </p>
       </div>
     </footer>
