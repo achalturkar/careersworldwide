@@ -1,15 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",        // ✅ STATIC MODE
+  images: {
+    unoptimized: true,     // ✅ REQUIRED for static
+  },
 
-    async redirects() {
+  async redirects() {
     return [
       {
-        source: '/36203/01/smt-endmill-price-in-johor', 
-        
-        destination: '/', 
-        
-        // This makes it a 301 Permanent Redirect (CRITICAL for SEO)
-        permanent: true,
+        source: "/36203/01/smt-endmill-price-in-johor",
+        destination: "/",
+        permanent: true,    // 301 SEO safe
       },
     ];
   },
