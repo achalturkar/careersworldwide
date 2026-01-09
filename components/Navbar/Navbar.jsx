@@ -103,7 +103,7 @@ const Navbar = () => {
             </div>
             {servicesOpen && (
               <ul className="pl-4 text-md mt-2 ">
-                <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/headhunting " onClick={() => setMenuOpen(false)}>Head Hunting</Link></li>
+                <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/headhunting" onClick={() => setMenuOpen(false)}>Head Hunting</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/contractualrecruitment" onClick={() => setMenuOpen(false)}>Contractual Recruitment</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/payrollmanagement" onClick={() => setMenuOpen(false)}>Payroll Management</Link></li>
                 <li className="p-2 hover:bg-gray-100 hover:text-blue-900 "><Link href="/services/permanentrecruitment" onClick={() => setMenuOpen(false)}>Permanent Recruitment</Link></li>
