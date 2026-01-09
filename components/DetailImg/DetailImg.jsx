@@ -3,45 +3,45 @@ import HandleMove from "../HandleMove/HandleMove";
 
 const DetailImg = () => {
 
-    const competencies=[
+    const competencies = [
         {
-            id:1,
+            id: 1,
             core: "Market Intelligence"
         },
         {
-            id:2,
+            id: 2,
             core: "Strategic Marketing"
         },
         {
-            id:3,
+            id: 3,
             core: "Social Media Connect"
         },
         {
-            id:4,
+            id: 4,
             core: "Talent Assessment "
         },
         {
-            id:5,
+            id: 5,
             core: "Proactive Approach "
         },
         {
-            id:6,
+            id: 6,
             core: "Strong Networking  "
         },
         {
-            id:7,
+            id: 7,
             core: "Resilience & Adaptability  "
         },
         {
-            id:8,
+            id: 8,
             core: "Effective Communication "
         },
         {
-            id:9,
+            id: 9,
             core: "Creative Sourcing Techniques"
         },
         {
-            id:10,
+            id: 10,
             core: "Innovative Recruitment Solutions"
         }
     ]
@@ -49,37 +49,37 @@ const DetailImg = () => {
 
         <div className="flex flex-col md:flex-row justify-center items-center p-3 md:p-12 mx-4 md:mx-32 gap-8  md:gap-16">
 
-            <div  data-aos="fade-right">
+            <div data-aos="fade-right">
                 <Image
                     src="/m.jpg"
-                    width={300}
-                    height={300}
-                    alt="desc Image"
-                    className="rounded-xl h-100px w-auto md:h-300px"
-
+                    alt="Recruitment and HR consulting expertise"
+                    width={500}
+                    height={600}
+                    className="rounded-xl w-[280px] md:w-[380px] lg:w-[400px] h-auto"
                 />
+
             </div>
 
             <div>
-                <div className=""  data-aos="fade-up">
+                <div className="" data-aos="fade-up">
                     <h1 className="text-2xl md:text-4xl font-black text-blue-950 ">Driven by Excellence, Powered by Expertise</h1>
                     <HandleMove />
                     <p className=" ">Our core strengths fuel smart hiring decisions and long-term success.</p>
-                    
+
                 </div>
 
                 <div >
-                    <ul className="pl-8 text-md font-semibold leading-4 mt-4 "  data-aos="fade-right">
-                       
-                       {
-                        competencies.map((each)=>(
-                            <li key={each.id} className="relative pl-8 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-3 before:h-3 before:bg-[url('/check.webp')]
+                    <ul className="pl-8 text-md font-semibold leading-4 mt-4 " data-aos="fade-right">
+
+                        {
+                            competencies.map((each) => (
+                                <li key={each.id} className="relative pl-8 before:absolute before:left-0 before:top-1/2 before:-translate-y-1/2 before:w-3 before:h-3 before:bg-[url('/check.webp')]
                             before:bg-contain before:bg-no-repeat hover:before:scale-125 hover:before:w-4 hover:before:h-4 transition-transform mb-4">
-                                <h1>{each.core}</h1>
-                            </li>
-                        ))
-                       }
-                       
+                                    <h1>{each.core}</h1>
+                                </li>
+                            ))
+                        }
+
                     </ul>
                 </div>
             </div>

@@ -17,7 +17,7 @@ const Card = ({ Detail }) => {
                         {/* service heading and description */}
                         <div className="h-8/11 gap-1">
                             <h1 className="font-bold text-xl text-blue-950 h-2/7">{each.head}</h1>
-                            <p className="text-md h-5/7 mb-2">{each.desc}</p>
+                            <p className="text-md  h-5/7 mb-2">{each.desc}</p>
 
                         </div>
                         {/* read more link */}

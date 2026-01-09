@@ -12,7 +12,7 @@ const NumberCounter = () => {
                     <p className="text-3xl font-bold ">
                         <CountUp
                             start={0}
-                            end={15}
+                            end={16}
                             enableScrollSpy={true}
                             scrollSpyOnce="true "
                             suffix="+"

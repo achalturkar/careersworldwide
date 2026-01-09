@@ -147,7 +147,7 @@ comprehensive database has qualified applicants which enable you to recruit the 
         <section className="flex flex-col px-2 md:px-20  gap-3 md:gap-4 my-4 md:my-20">
 
           <div className=" flext flex-col justify-center items-center" data-aos="fade-right">
-            <h1 className="text-3xl font-bold text-blue-950 ">Meet Our Team</h1>
+            <h1 className="text-3xl font-bold text-blue-950 ">Meet Our Founder</h1>
             <HandleMove className="items-center" />
           </div>
 

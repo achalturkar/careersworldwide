@@ -8,67 +8,71 @@
   </url>
 
   <url>
-    <loc>https://careersworldwide.in/contact</loc>
+    <loc>https://careersworldwide.in/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+   <url>
+    <loc>https://careersworldwide.in/about/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+   <url>
+    <loc>https://careersworldwide.in/expertise/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <url>
-    <loc>https://careersworldwide.in/job-openings</loc>
+    <loc>https://careersworldwide.in/job-openings/</loc>
     <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://careersworldwide.in/partner-with-us</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://careersworldwide.in/careers</loc>
+    <loc>https://careersworldwide.in/partner-with-us/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://careersworldwide.in/about</loc>
+    <loc>https://careersworldwide.in/careers/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+ 
+
+  <url>
+    <loc>https://careersworldwide.in/howwework/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://careersworldwide.in/howwework</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+ 
 
   <url>
-    <loc>https://careersworldwide.in/expertise</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
-    <loc>https://careersworldwide.in/services/contractualrecruitment</loc>
+    <loc>https://careersworldwide.in/services/contractualrecruitment/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://careersworldwide.in/services/headhunting</loc>
+    <loc>https://careersworldwide.in/services/headhunting/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://careersworldwide.in/services/payrollmanagement</loc>
+    <loc>https://careersworldwide.in/services/payrollmanagement/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://careersworldwide.in/services/permanentrecruitment</loc>
+    <loc>https://careersworldwide.in/services/permanentrecruitment/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
