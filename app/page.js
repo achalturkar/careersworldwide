@@ -15,7 +15,7 @@ import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 
 
 export const metadata = {
-  title: "Careers Worldwid | Recruitment & Staffing Solutions",
+  title: "Careers Worldwide",
   description:
     "Careers Worldwide is a global recruitment and HR consultancy with offices in India and the UK, serving clients since 2010. We specialize in permanent hiring, headhunting, contractual recruitment, and payroll management.",
   alternates: {

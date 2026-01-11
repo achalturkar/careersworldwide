@@ -6,7 +6,16 @@ import ServiceDetail from "@/components/ServiceDetail/ServiceDetail";
 import Image from "next/image";
 import ImageComponent from "@/components/ImageComponent/ImageComponent";
 import { FaLinkedin } from "react-icons/fa";
-import Head from "next/head";
+
+export const metadata = {
+  title: "About Us",
+  description:
+    "Learn about Careers Worldwide, a global recruitment and HR consultancy delivering permanent hiring, headhunting, contractual recruitment, and payroll solutions since 2010.",
+  alternates: {
+    canonical: "https://www.careersworldwide.in/about/",
+  },
+};
+
 
 const About = () => {
 
@@ -64,23 +73,6 @@ const About = () => {
 
  return (
     <>
-      <Head>
-        <title>About Us - Careers Worldwide</title>
-        <meta
-          name="description"
-          content="Careers Worldwide is complete Human Resources, Manpower & Training solution provider with offices in India and UK. We have established our operations in year 2010 and since have been working with many esteemed organizations and brands as successful recruitment partners. Our professional team is offering every possible assistance at every stage of operations in recruitment, training, and consultancy."
-        />
-        <meta
-          name="keywords"
-          content="about Careers Worldwide, recruitment company, global hiring, staffing agency, IT recruitment, contractual, freelancing, permanent job, HR consultancy"
-        />
-        <meta name="author" content="Careers Worldwide" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://careersworldwide.in/about" />
-
-
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
 
       <main className="mt-26">
 
@@ -184,8 +176,5 @@ comprehensive database has qualified applicants which enable you to recruit the 
 
 
 }
-export const metadata = {
-  title: 'About - Careers Worldwide', 
-};
 
 export default About;

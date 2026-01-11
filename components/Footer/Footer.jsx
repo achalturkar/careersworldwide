@@ -13,7 +13,7 @@ const Footer = () => {
           src="/md.png"
           alt="Background"
           fill
-          className="object-cover opacity-90 "
+          className="object-cover opacity-100 "
         />
       </div>
       <div className="max-w-7xl mx-auto flex flex-col gap-12 mb-10">

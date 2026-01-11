@@ -33,7 +33,7 @@ const roboto = Roboto({
 /* ✅ Global SEO Metadata */
 export const metadata = {
   title: {
-    default: "Careers Worldwide | Recruitment & Staffing Solutions",
+    default: "Careers Worldwide",
     template: "Careers Worldwide | %s ",
   },
   description:
